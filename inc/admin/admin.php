@@ -167,7 +167,7 @@ if (!function_exists('academica_display_theme_page')) {
 							</p>
 							<p>
 								<a href="<?php echo esc_url(__('https://www.wpzoom.com/themes/academica-pro-3/', 'academica')); ?>" target="_blank" class="button button-primary">
-									<?php esc_html_e('Upgrade to academica PRO', 'academica'); ?>
+									<?php esc_html_e('Upgrade to Academica PRO', 'academica'); ?>
 								</a>
 							</p>
 						</div><hr /><br/>
@@ -180,7 +180,7 @@ if (!function_exists('academica_display_theme_page')) {
 								<?php esc_html_e('Upgrading to Academica PRO you will unlock a dozen of unique features that will take your website to the next level. See in the table below just a few of the features included in the PRO version.', 'academica'); ?>
 							</p>
 							<p>
-								<a href="<?php echo esc_url(__('http://demo.wpzoom.com/?theme=academica-pro-3', 'academica')); ?>" target="_blank" class="button button-primary">
+								<a href="<?php echo esc_url(__('https://demo.wpzoom.com/?theme=academica-pro-3', 'academica')); ?>" target="_blank" class="button button-primary">
 									<?php esc_html_e('View Academica PRO Demo', 'academica'); ?>
 								</a>
 							</p>

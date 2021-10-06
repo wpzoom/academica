@@ -2,16 +2,17 @@
 Theme Name: Academica
 Theme URI: https://www.wpzoom.com/themes/academica/
 Description: Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.
-Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready
+Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, blog, rtl-language-support
 Version: 2.0.6
-Requires at least: 5.0
+Requires at least: 5.2
 Requires PHP: 5.6
-Tested up to: 5.6
+Tested up to: 5.8
 Author: WPZOOM
 Author URI: https://www.wpzoom.com/
 License: GPL v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: academica
+Domain Path: /languages/
 */
 
 /* =General

@@ -1,6 +1,11 @@
-= ACADEMICA =
-
-* by WPZOOM, https://www.wpzoom.com/
+=== Academica ===
+Contributors: WPZOOM
+Requires at least: 5.2
+Tested up to: 5.8
+Version: 2.0.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, blog, rtl-language-support
 
 == ABOUT ACADEMICA ==
 
@@ -8,6 +13,17 @@ Academica is an education- and school-oriented CMS theme with a three-column lay
 
 Please note:
 The Footer Menu is best suitable for short menues with just a few links, as it only supports one menu level.
+
+More customization options & features are available in the PRO version. https://www.wpzoom.com/themes/academica-pro-3/
+
+== Installation ==
+
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Academica in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://www.wpzoom.com/documentation/academica for a guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+
 
 == Changelog ==
 

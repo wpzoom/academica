@@ -27,8 +27,8 @@ class Academica_Featured_Posts_Gallery extends WP_Widget {
 		ob_start();
 		extract( $args, EXTR_SKIP );
 
-		$title      = apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base );
-		$category   = absint( $instance['category'] );
+		$title      = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+		$category   = isset( $instance['category'] ) ? absint( $instance['category'] ) : '';
 		$amount     = absint( $instance['amount'] );
 		$count = 0;
 		$query_args = array(

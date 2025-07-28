@@ -614,8 +614,8 @@ img.aligncenter,
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     font: normal 12px/16px 'dashicons';
-    vertical-align: top;
-    margin: 5px 0px 0 4px;
+    vertical-align: middle;
+    margin: 0 0 0 4px;
 }
 
 .sf-arrows ul .sf-with-ul:after {

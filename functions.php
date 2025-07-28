@@ -17,6 +17,60 @@ function academica_setup() {
 	// This theme styles the visual editor to resemble the theme style.
 	add_editor_style( array( 'css/editor-style.css' ) );
 
+	// Block Editor Support
+	add_theme_support( 'editor-styles' );
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'align-wide' );
+
+	// Block Editor Color Palette
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name'  => __( 'Primary Blue', 'academica' ),
+			'slug'  => 'primary-blue',
+			'color' => '#0A5794',
+		),
+		array(
+			'name'  => __( 'Dark Gray', 'academica' ),
+			'slug'  => 'dark-gray',
+			'color' => '#333333',
+		),
+		array(
+			'name'  => __( 'Light Gray', 'academica' ),
+			'slug'  => 'light-gray',
+			'color' => '#777777',
+		),
+		array(
+			'name'  => __( 'White', 'academica' ),
+			'slug'  => 'white',
+			'color' => '#ffffff',
+		),
+	) );
+
+	// Block Editor Font Sizes
+	add_theme_support( 'editor-font-sizes', array(
+		array(
+			'name' => __( 'Small', 'academica' ),
+			'size' => 14,
+			'slug' => 'small'
+		),
+		array(
+			'name' => __( 'Regular', 'academica' ),
+			'size' => 16,
+			'slug' => 'regular'
+		),
+		array(
+			'name' => __( 'Large', 'academica' ),
+			'size' => 18,
+			'slug' => 'large'
+		),
+		array(
+			'name' => __( 'Extra Large', 'academica' ),
+			'size' => 24,
+			'slug' => 'extra-large'
+		),
+	) );
+
 	// Custom Background
 	add_theme_support( 'custom-background' );
 
@@ -66,8 +120,6 @@ function academica_enqueue_scripts() {
 	wp_enqueue_style( 'academica-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'academica-style-mobile', get_template_directory_uri() . '/media-queries.css', array( 'academica-style' ), '1.0' );
-
-	wp_enqueue_style( 'academica-google-font-default', '//fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700&subset=latin,cyrillic-ext,greek-ext&display=swap' );
 
 	wp_enqueue_style( 'dashicons' );
 
@@ -245,15 +297,6 @@ function academica_continue_reading_link() {
 	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'academica' ) . '</a>';
 }
 endif; // academica_continue_reading_link
-
-/**
- * Replaces "[...]" (appended to automatically generated excerpts) with an
- * ellipsis and academica_continue_reading_link().
- */
-function academica_auto_excerpt_more( $more ) {
-	return ' &hellip;' . academica_continue_reading_link();
-}
-add_filter( 'excerpt_more', 'academica_auto_excerpt_more' );
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.
@@ -657,4 +700,14 @@ if (is_admin()) {
 
     }
 
+}
+
+/**
+ * Sanitize content display setting
+ */
+if (!function_exists('academica_sanitize_content_display')) {
+    function academica_sanitize_content_display($input) {
+        $valid_options = array('excerpt', 'full');
+        return in_array($input, $valid_options) ? $input : 'excerpt';
+    }
 }

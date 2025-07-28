@@ -242,3 +242,35 @@
         margin-bottom: 20px;
     }
 }
+
+/* Fix Widgets Page Serif Font Issue */
+.widgets-php body,
+.widgets-php .widget-content,
+.widgets-php .widget .widget-top,
+.widgets-php .widget .widget-inside,
+.widgets-php .block-editor-block-list__block,
+.widgets-php .wp-block,
+.widgets-php .interface-interface-skeleton__content,
+.widgets-php .edit-widgets-main-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+/* Block Editor Styling for Admin */
+.block-editor-page body,
+.block-editor-page .editor-styles-wrapper,
+.block-editor-page .wp-block {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+/* Widgets Block Editor */
+.edit-widgets-main-content .wp-block,
+.edit-widgets-main-content .block-editor-block-list__block {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+/* Legacy Widget Forms */
+.widget .widget-inside input,
+.widget .widget-inside textarea,
+.widget .widget-inside select {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}

@@ -27,6 +27,14 @@ More customization options & features are available in the PRO version. https://
 
 == Changelog ==
 
+= 2.0.9 =
+* Added: Blog Options in Customizer to choose between excerpts or full content on archives (default: excerpts)
+* Performance: Replaced Google Fonts with system font stack for faster loading
+* Readability: Increased minimum text size from 10-12px to 14px throughout
+* Readability: Improved line-height for better text flow
+* Added: Complete Gutenberg/Block Editor support with custom color palette
+* Fixed: Admin widgets page font consistency
+
 = 2.0.8 =
 * Minor fixes for PHP 8.0+
 

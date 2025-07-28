@@ -82,6 +82,29 @@ function academica_customizer_add_sections_and_options( $wp_customize ) {
             'settings' => 'header-background-color'
         )
     ) );
+
+    // Add Blog Options Section
+    $wp_customize->add_section( 'academica_blog_options', array(
+        'title'    => __( 'Blog Options', 'academica' ),
+        'priority' => 25,
+    ) );
+
+    // Add Post Content Display Setting
+    $wp_customize->add_setting( 'academica_post_content_display', array(
+        'default'           => 'excerpt',
+        'sanitize_callback' => 'academica_sanitize_content_display',
+    ) );
+
+    $wp_customize->add_control( 'academica_post_content_display', array(
+        'type'     => 'radio',
+        'label'    => __( 'Post Content Display on Archives', 'academica' ),
+        'description' => __( 'Choose how to display post content on blog pages, archives, and search results.', 'academica' ),
+        'section'  => 'academica_blog_options',
+        'choices'  => array(
+            'excerpt' => __( 'Show Excerpts (Recommended)', 'academica' ),
+            'full'    => __( 'Show Full Content', 'academica' ),
+        ),
+    ) );
 }
 add_action( 'customize_register', 'academica_customizer_add_sections_and_options' );
 

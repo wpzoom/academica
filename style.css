@@ -3,7 +3,7 @@ Theme Name: Academica
 Theme URI: https://www.wpzoom.com/themes/academica/
 Description: Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.
 Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, blog, rtl-language-support
-Version: 2.0.8
+Version: 2.0.9
 Requires at least: 6.0
 Requires PHP: 7.4
 Tested up to: 6.8
@@ -20,7 +20,7 @@ Domain Path: /languages/
 
 html {
 	color: #333;
-	font-family: "Open Sans", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1;
 	overflow-y: scroll;
@@ -34,6 +34,7 @@ html {
 
 body {
 	font-size: 16px;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
@@ -219,7 +220,7 @@ textarea {
 	margin: 0;
 	vertical-align: baseline;
 	*vertical-align: middle;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 button,
@@ -360,14 +361,14 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
+	font-weight: 700;
 	margin: 0;
 	padding: 0;
 }
 h1 {
 	clear: both;
 	font-size: 40px;
- 	line-height: 1.15;
+ 	line-height: 1.2;
 	margin-bottom: 30px;
 }
 h2 {
@@ -508,7 +509,7 @@ img.aligncenter,
 #site-title {
 	font-size: 30pt;
 	letter-spacing: inherit;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: bold;
 	margin: 0;
  	color: #fff
@@ -593,7 +594,7 @@ img.aligncenter,
 	color: #fff;
 	display: block;
 	padding: 5px 35px 15px 0;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
     opacity: .8;
 }
 
@@ -750,7 +751,7 @@ img.aligncenter,
 
 
 .title-header {
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 600;
 	font-size: 36px;
  	word-wrap: break-word;
@@ -787,7 +788,7 @@ img.aligncenter,
 .posts .post h2,
 .posts .page h2 {
 	font-size: 36px;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.2;
 	margin: 0 0 8px;
@@ -817,7 +818,7 @@ div.single h5,
 div.single h6 {
 	clear: both;
 	margin: 15px 0 15px;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: bold;
 }
 
@@ -1033,7 +1034,7 @@ p.pages {
 	margin-bottom: 5px;
 }
 .commentlist blockquote {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .commentlist li.bypostauthor {
@@ -1044,12 +1045,12 @@ p.pages {
  	margin-top: 15px;
 }
 #commentform code {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #commentform p {
-	font-size: 12px;
-	margin-bottom: 10px;
+	font-size: 14px;
+	margin-bottom: 12px;
 	overflow: hidden;
 }
 
@@ -1151,7 +1152,7 @@ p.pages {
 }
 
 .navigation p {
-	font-size: 10px;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -1244,7 +1245,7 @@ p.pages {
 	font-size: 24px;
 	line-height: 1.2;
 	font-weight: normal;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 	line-height: inherit;
 	border-bottom: 1px solid #eee;
 	padding: 0 0 15px;
@@ -1391,7 +1392,7 @@ p.pages {
 .academica-featured-posts-gallery .post h3 {
 	margin: 0 0 10px;
 	font-size: 18px;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 
@@ -1423,4 +1424,78 @@ html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-wh
 .mm-menu.mm-offcanvas.mm-right{left:auto}html.mm-right.mm-opening .mm-slideout{-webkit-transform:translate(-80%,0);-ms-transform:translate(-80%,0);transform:translate(-80%,0);-webkit-transform:translate3d(-80%,0,0);transform:translate3d(-80%,0,0)}@media all and (max-width:175px){html.mm-right.mm-opening .mm-slideout{-webkit-transform:translate(-140px,0);-ms-transform:translate(-140px,0);transform:translate(-140px,0);-webkit-transform:translate3d(-140px,0,0);transform:translate3d(-140px,0,0)}}@media all and (min-width:550px){html.mm-right.mm-opening .mm-slideout{-webkit-transform:translate(-440px,0);-ms-transform:translate(-440px,0);transform:translate(-440px,0);-webkit-transform:translate3d(-440px,0,0);transform:translate3d(-440px,0,0)}}html.mm-front .mm-slideout{-webkit-transform:none!important;-ms-transform:none!important;transform:none!important;z-index:0}html.mm-front #mm-blocker{z-index:1}html.mm-front .mm-menu.mm-offcanvas{z-index:2}.mm-menu.mm-offcanvas.mm-front,.mm-menu.mm-offcanvas.mm-next{-webkit-transition:-webkit-transform .4s ease;transition:-webkit-transform .4s ease;transition:transform .4s ease;transition:transform .4s ease,-webkit-transform .4s ease;-webkit-transform:translate(-100%,0);-ms-transform:translate(-100%,0);transform:translate(-100%,0);-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}.mm-menu.mm-offcanvas.mm-front.mm-right,.mm-menu.mm-offcanvas.mm-next.mm-right{-webkit-transform:translate(100%,0);-ms-transform:translate(100%,0);transform:translate(100%,0);-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}.mm-menu.mm-offcanvas.mm-top{-webkit-transform:translate(0,-100%);-ms-transform:translate(0,-100%);transform:translate(0,-100%);-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}.mm-menu.mm-offcanvas.mm-bottom{-webkit-transform:translate(0,100%);-ms-transform:translate(0,100%);transform:translate(0,100%);-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);top:auto}.mm-menu.mm-offcanvas.mm-bottom,.mm-menu.mm-offcanvas.mm-top{width:100%;min-width:100%;max-width:100%;height:80%;min-height:140px;max-height:880px}html.mm-opening .mm-menu.mm-offcanvas.mm-front,html.mm-opening .mm-menu.mm-offcanvas.mm-next{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .mm-menu.mm-shadow-page:after{content:"";display:block;width:20px;height:120%;position:absolute;left:100%;top:-10%;z-index:99}.mm-menu.mm-shadow-page.mm-right:after{left:auto;right:100%}.mm-menu.mm-shadow-page.mm-front:after,.mm-menu.mm-shadow-page.mm-next:after{content:none;display:none}.mm-menu.mm-shadow-page:after,.mm-menu.mm-shadow-panels .mm-panel.mm-opened:nth-child(n+2){box-shadow:0 0 10px rgba(0,0,0,.3)}
 .mm-menu.mm-theme-dark{background:#333;border-color:rgba(0,0,0,.15);color:rgba(255,255,255,.8)}.mm-menu.mm-theme-dark .mm-navbar a,.mm-menu.mm-theme-dark .mm-navbar>*,.mm-menu.mm-theme-dark em.mm-counter{color:rgba(255,255,255,.4)}.mm-menu.mm-theme-dark .mm-btn:after,.mm-menu.mm-theme-dark .mm-btn:before{border-color:rgba(255,255,255,.4)}.mm-menu.mm-theme-dark .mm-listview{border-color:rgba(0,0,0,.15)}.mm-menu.mm-theme-dark .mm-listview>li .mm-next:after{border-color:rgba(255,255,255,.4)}.mm-menu.mm-theme-dark .mm-listview>li a:not(.mm-next){-webkit-tap-highlight-color:rgba(0,0,0,.1);tap-highlight-color:rgba(0,0,0,.1)}.mm-menu.mm-theme-dark .mm-listview>li.mm-selected>a:not(.mm-next),.mm-menu.mm-theme-dark .mm-listview>li.mm-selected>span{background:rgba(0,0,0,.1)}.mm-menu.mm-theme-dark .mm-divider,.mm-menu.mm-theme-dark .mm-fixeddivider span,.mm-menu.mm-theme-dark .mm-listview>li.mm-opened.mm-vertical>.mm-panel,.mm-menu.mm-theme-dark .mm-listview>li.mm-opened.mm-vertical>a.mm-next,.mm-menu.mm-theme-dark.mm-vertical .mm-listview>li.mm-opened>.mm-panel,.mm-menu.mm-theme-dark.mm-vertical .mm-listview>li.mm-opened>a.mm-next{background:rgba(255,255,255,.05)}.mm-menu.mm-theme-dark label.mm-check:before{border-color:rgba(255,255,255,.8)}.mm-menu.mm-shadow-page.mm-theme-dark:after,.mm-menu.mm-shadow-panels .mm-panel.mm-opened:nth-child(n+2){box-shadow:0 0 20px rgba(0,0,0,.5)}.mm-menu.mm-theme-dark .mm-search input{background:rgba(255,255,255,.3);color:rgba(255,255,255,.8)}.mm-menu.mm-theme-dark .mm-indexer a,.mm-menu.mm-theme-dark .mm-noresultsmsg{color:rgba(255,255,255,.4)}.mm-menu.mm-hoverselected.mm-theme-dark .mm-listview>li>a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected.mm-theme-dark .mm-listview>li>a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview>li>a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview>li>a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected.mm-theme-dark .mm-listview>li>a.mm-selected:not(.mm-fullsubopen){background:rgba(0,0,0,.1)}.mm-menu.mm-theme-dark label.mm-toggle{background:rgba(0,0,0,.15)}.mm-menu.mm-theme-dark label.mm-toggle:before{background:#333}.mm-menu.mm-theme-dark input.mm-toggle:checked~label.mm-toggle{background:#4bd963}.mm-menu.mm-theme-white{background:#fff;border-color:rgba(0,0,0,.1);color:rgba(0,0,0,.6)}.mm-menu.mm-theme-white .mm-navbar a,.mm-menu.mm-theme-white .mm-navbar>*,.mm-menu.mm-theme-white em.mm-counter{color:rgba(0,0,0,.3)}.mm-menu.mm-theme-white .mm-btn:after,.mm-menu.mm-theme-white .mm-btn:before{border-color:rgba(0,0,0,.3)}.mm-menu.mm-theme-white .mm-listview{border-color:rgba(0,0,0,.1)}.mm-menu.mm-theme-white .mm-listview>li .mm-next:after{border-color:rgba(0,0,0,.3)}.mm-menu.mm-theme-white .mm-listview>li a:not(.mm-next){-webkit-tap-highlight-color:rgba(0,0,0,.05);tap-highlight-color:rgba(0,0,0,.05)}.mm-menu.mm-theme-white .mm-listview>li.mm-selected>a:not(.mm-next),.mm-menu.mm-theme-white .mm-listview>li.mm-selected>span{background:rgba(0,0,0,.05)}.mm-menu.mm-theme-white .mm-divider,.mm-menu.mm-theme-white .mm-fixeddivider span,.mm-menu.mm-theme-white .mm-listview>li.mm-opened.mm-vertical>.mm-panel,.mm-menu.mm-theme-white .mm-listview>li.mm-opened.mm-vertical>a.mm-next,.mm-menu.mm-theme-white.mm-vertical .mm-listview>li.mm-opened>.mm-panel,.mm-menu.mm-theme-white.mm-vertical .mm-listview>li.mm-opened>a.mm-next{background:rgba(0,0,0,.03)}.mm-menu.mm-theme-white label.mm-check:before{border-color:rgba(0,0,0,.6)}.mm-menu.mm-shadow-page.mm-theme-white:after,.mm-menu.mm-shadow-panels .mm-panel.mm-opened:nth-child(n+2){box-shadow:0 0 10px rgba(0,0,0,.2)}.mm-menu.mm-theme-white .mm-search input{background:rgba(0,0,0,.05);color:rgba(0,0,0,.6)}.mm-menu.mm-theme-white .mm-indexer a,.mm-menu.mm-theme-white .mm-noresultsmsg{color:rgba(0,0,0,.3)}.mm-menu.mm-hoverselected.mm-theme-white .mm-listview>li>a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected.mm-theme-white .mm-listview>li>a:not(.mm-fullsubopen):hover,.mm-menu.mm-parentselected.mm-theme-white .mm-listview>li>a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected.mm-theme-white .mm-listview>li>a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected.mm-theme-white .mm-listview>li>a.mm-selected:not(.mm-fullsubopen){background:rgba(0,0,0,.05)}.mm-menu.mm-theme-white label.mm-toggle{background:rgba(0,0,0,.1)}.mm-menu.mm-theme-white label.mm-toggle:before{background:#fff}.mm-menu.mm-theme-white input.mm-toggle:checked~label.mm-toggle{background:#4bd963}.mm-menu.mm-theme-black{background:#000;border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.6)}.mm-menu.mm-theme-black .mm-navbar a,.mm-menu.mm-theme-black .mm-navbar>*,.mm-menu.mm-theme-black em.mm-counter{color:rgba(255,255,255,.4)}.mm-menu.mm-theme-black .mm-btn:after,.mm-menu.mm-theme-black .mm-btn:before{border-color:rgba(255,255,255,.4)}.mm-menu.mm-theme-black .mm-listview{border-color:rgba(255,255,255,.2)}.mm-menu.mm-theme-black .mm-listview>li .mm-next:after{border-color:rgba(255,255,255,.4)}.mm-menu.mm-theme-black .mm-listview>li a:not(.mm-next){-webkit-tap-highlight-color:rgba(255,255,255,.3);tap-highlight-color:rgba(255,255,255,.3)}.mm-menu.mm-theme-black .mm-listview>li.mm-selected>a:not(.mm-next),.mm-menu.mm-theme-black .mm-listview>li.mm-selected>span{background:rgba(255,255,255,.3)}.mm-menu.mm-theme-black .mm-divider,.mm-menu.mm-theme-black .mm-fixeddivider span,.mm-menu.mm-theme-black .mm-listview>li.mm-opened.mm-vertical>.mm-panel,.mm-menu.mm-theme-black .mm-listview>li.mm-opened.mm-vertical>a.mm-next,.mm-menu.mm-theme-black.mm-vertical .mm-listview>li.mm-opened>.mm-panel,.mm-menu.mm-theme-black.mm-vertical .mm-listview>li.mm-opened>a.mm-next{background:rgba(255,255,255,.2)}.mm-menu.mm-theme-black label.mm-check:before{border-color:rgba(255,255,255,.6)}.mm-menu.mm-hoverselected.mm-theme-black .mm-listview>li>a.mm-fullsubopen:hover+span,.mm-menu.mm-hoverselected.mm-theme-black .mm-listview>li>a:not(.mm-fullsubopen):hover,.mm-menu.mm-keyboardfocus a:focus,.mm-menu.mm-parentselected.mm-theme-black .mm-listview>li>a.mm-selected.mm-fullsubopen+a,.mm-menu.mm-parentselected.mm-theme-black .mm-listview>li>a.mm-selected.mm-fullsubopen+span,.mm-menu.mm-parentselected.mm-theme-black .mm-listview>li>a.mm-selected:not(.mm-fullsubopen){background:rgba(255,255,255,.3)}.mm-menu.mm-shadow-page.mm-theme-black:after{content:none;display:none}.mm-menu.mm-shadow-panels .mm-panel.mm-opened:nth-child(n+2){box-shadow:false}.mm-menu.mm-theme-black .mm-search input{background:rgba(255,255,255,.3);color:rgba(255,255,255,.6)}.mm-menu.mm-theme-black .mm-indexer a,.mm-menu.mm-theme-black .mm-noresultsmsg{color:rgba(255,255,255,.4)}.mm-menu.mm-theme-black label.mm-toggle{background:rgba(255,255,255,.2)}.mm-menu.mm-theme-black label.mm-toggle:before{background:#000}.mm-menu.mm-theme-black input.mm-toggle:checked~label.mm-toggle{background:#4bd963}
+
+
+
+/* Block Editor Support */
+.alignwide {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	max-width: 1200px;
+}
+
+.alignfull {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	max-width: none;
+	clear: both;
+}
+
+.wp-block-pullquote {
+	border-left: 4px solid #0A5794;
+	padding-left: 1em;
+	margin: 1.5em 0;
+}
+
+/* Block Editor Color Classes */
+.has-primary-blue-color {
+	color: #0A5794;
+}
+
+.has-primary-blue-background-color {
+	background-color: #0A5794;
+}
+
+.has-dark-gray-color {
+	color: #333333;
+}
+
+.has-dark-gray-background-color {
+	background-color: #333333;
+}
+
+.has-light-gray-color {
+	color: #777777;
+}
+
+.has-light-gray-background-color {
+	background-color: #777777;
+}
+
+/* Continue Reading Link */
+.read-more {
+	color: #0A5794;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.read-more:hover {
+	color: #083d68;
+	text-decoration: underline;
+}
+
+/* Read more link from the_content() */
+.read-more-link {
+	color: #0A5794;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.read-more-link:hover {
+	color: #083d68;
+	text-decoration: underline;
+}
 .mm-menu .mm-tileview.mm-listview:after,.mm-menu.mm-tileview .mm-listview:after{content:'';display:block;clear:both}.mm-menu .mm-tileview.mm-listview>li>.mm-next:after,.mm-menu .mm-tileview.mm-listview>li>.mm-next:before,.mm-menu.mm-tileview .mm-listview>li>.mm-next:after,.mm-menu.mm-tileview .mm-listview>li>.mm-next:before,.mm-menu.mm-tileview .mm-panel:after{content:none;display:none}.mm-menu .mm-tileview.mm-listview>li,.mm-menu.mm-tileview .mm-listview>li{width:50%;height:0;padding:50% 0 0;float:left;position:relative}.mm-menu .mm-tileview.mm-listview>li:after,.mm-menu.mm-tileview .mm-listview>li:after{left:0;top:0;border-right-width:1px;border-right-style:solid;z-index:-1}.mm-menu .mm-tileview.mm-listview>li.mm-tile-xs,.mm-menu.mm-tileview .mm-listview>li.mm-tile-xs{width:12.5%;padding-top:12.5%}.mm-menu .mm-tileview.mm-listview>li.mm-tile-s,.mm-menu.mm-tileview .mm-listview>li.mm-tile-s{width:25%;padding-top:25%}.mm-menu .mm-tileview.mm-listview>li.mm-tile-l,.mm-menu.mm-tileview .mm-listview>li.mm-tile-l{width:75%;padding-top:75%}.mm-menu .mm-tileview.mm-listview>li.mm-tile-xl,.mm-menu.mm-tileview .mm-listview>li.mm-tile-xl{width:100%;padding-top:100%}.mm-menu .mm-tileview.mm-listview>li>a,.mm-menu .mm-tileview.mm-listview>li>span,.mm-menu.mm-tileview .mm-listview>li>a,.mm-menu.mm-tileview .mm-listview>li>span{line-height:1px;text-align:center;padding:50% 10px 0;margin:0;position:absolute;top:0;right:1px;bottom:1px;left:0}.mm-menu .mm-tileview.mm-listview>li>.mm-next,.mm-menu.mm-tileview .mm-listview>li>.mm-next{width:auto}.mm-menu.mm-tileview .mm-panel{padding-left:0;padding-right:0}.mm-menu.mm-tileview .mm-listview{margin:0}

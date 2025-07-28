@@ -23,6 +23,28 @@
 		endif;
 		edit_post_link( __( 'Edit', 'academica' ), '<span class="edit-link"><span class="sep"> / </span>', '</span>' ); ?>
 	</p><!-- end .entry-meta -->
-	<div class="entry-summary"><?php the_content(); ?></div>
+	<div class="entry-summary">
+		<?php
+		$content_display = get_theme_mod( 'academica_post_content_display', 'excerpt' );
+		if ( 'full' === $content_display ) {
+			// Show content but respect read-more tags/blocks on archive pages
+			if ( ! is_single() && ! is_page() ) {
+				$content = get_the_content();
+
+				// Use standard the_content() for classic <!--more--> tags
+				the_content( '<span class="read-more-link">' . esc_html__( 'Continue Reading', 'academica' ) . ' &rarr;</span>' );
+			} else {
+				the_content();
+			}
+		} else {
+			// Get excerpt without the automatic "Continue reading" link
+			$excerpt = get_the_excerpt();
+			if ( $excerpt ) {
+				echo '<p>' . $excerpt . '</p>';
+			}
+			echo '<p><a href="' . esc_url( get_permalink() ) . '" class="read-more">' . esc_html__( 'Continue Reading', 'academica' ) . ' &rarr;</a></p>';
+		}
+		?>
+	</div>
 
 </div><!-- end #post-## -->

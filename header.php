@@ -72,10 +72,11 @@
 	                    <div class="navbar-header">
 	                        <?php if (has_nav_menu( 'primary' )) { ?>
 
-	                           <a class="navbar-toggle" href="#menu-main-slide">
-	                               <span class="icon-bar"></span>
-	                               <span class="icon-bar"></span>
-	                               <span class="icon-bar"></span>
+	                           <a class="navbar-toggle" href="#menu-main-slide" aria-label="<?php esc_attr_e( 'Toggle mobile menu', 'academica' ); ?>" aria-expanded="false" aria-controls="menu-main-slide">
+	                               <span class="screen-reader-text"><?php _e( 'Toggle mobile menu', 'academica' ); ?></span>
+	                               <span class="icon-bar" aria-hidden="true"></span>
+	                               <span class="icon-bar" aria-hidden="true"></span>
+	                               <span class="icon-bar" aria-hidden="true"></span>
 	                           </a>
 
 

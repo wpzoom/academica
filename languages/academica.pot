@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Academica 1.2.2-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/academica\n"
-"POT-Creation-Date: 2021-10-06 09:15+0000\n"
+"POT-Creation-Date: 2025-07-28 07:05+0000\n"
 "POT-Revision-Date: Sun May 08 2016 10:34:03 GMT+0300 (EEST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -33,7 +33,7 @@ msgid "&larr; Previous"
 msgstr ""
 
 #. used between list items, there is a space after the comma.
-#: functions.php:348
+#: functions.php:392
 msgid ", "
 msgstr ""
 
@@ -41,31 +41,39 @@ msgstr ""
 msgid "- Recent in all categories -"
 msgstr ""
 
-#: inc/admin/admin.php:217
+#: inc/admin/admin.php:212
 msgid "1"
 msgstr ""
 
-#: inc/admin/admin.php:213
+#: inc/admin/admin.php:241
+msgid "1-Click Demo Content Importer"
+msgstr ""
+
+#: inc/admin/admin.php:223
 msgid "11 (4 on Homepage)"
 msgstr ""
 
-#: inc/admin/admin.php:207
+#: inc/admin/admin.php:217
 msgid "2"
 msgstr ""
 
-#: inc/admin/admin.php:212 inc/admin/admin.php:218
+#: inc/admin/admin.php:222
 msgid "3"
 msgstr ""
 
-#: inc/admin/admin.php:256
+#: inc/admin/admin.php:213
+msgid "4 (Default, Full-width, Slideshow Top, Small Slideshow)"
+msgstr ""
+
+#: inc/admin/admin.php:266
 msgid "50+ Color Options"
 msgstr ""
 
-#: inc/admin/admin.php:208
+#: inc/admin/admin.php:218
 msgid "6 (Custom Menu, Image Box, Testimonials, Recent Posts, etc.)"
 msgstr ""
 
-#: inc/admin/admin.php:261
+#: inc/admin/admin.php:271
 msgid "600+ Google Fonts"
 msgstr ""
 
@@ -78,21 +86,21 @@ msgid ""
 msgstr ""
 
 #. 1 is the author's name, 2 is category, and 3 is the date.
-#: functions.php:365
+#: functions.php:409
 #, php-format
 msgid ""
 "<span class=\"by-author\">By %1$s </span>in <span class=\"category\">"
-"%2$s</span> on <span class=\"datetime\">%3$s</span>."
+"%2$s</span> on <span class=\"datetime\">%3$s</span>"
 msgstr ""
 
-#: functions.php:367
+#: functions.php:411
 #, php-format
 msgid ""
 "<span class=\"by-author\">By %1$s </span>on <span class=\"datetime\">"
 "%3$s</span>."
 msgstr ""
 
-#: functions.php:393
+#: functions.php:437
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
@@ -121,11 +129,26 @@ msgid "Academica Free vs. Academica PRO"
 msgstr ""
 
 #. Description of the theme
+msgid ""
+"Academica is a lightweight, accessible, and privacy-friendly WordPress theme "
+"designed for schools, universities, and educational institutions. With a "
+"clean three-column layout and modern design, it’s perfect for presenting "
+"academic programs, events, and news. The theme is fully customizable, GDPR-"
+"compliant, and optimized for fast performance. It uses system fonts only (no "
+"Google Fonts) for better privacy and speed. Looking for more features? "
+"Upgrade to Academica PRO 3.0 to unlock advanced customization options, "
+"Elementor integration, additional layouts, and premium support - ideal for "
+"creating a professional education website - https://www.wpzoom."
+"com/themes/academica-pro-3/"
+msgstr ""
+
 #: inc/admin/admin.php:100
 msgid ""
 "Academica is an education- and school-oriented CMS theme with a three-column "
 "layout and modern design. It is easy to customize and comes with a custom "
-"widget, three templates for Posts and Pages."
+"widget, three templates for Posts and Pages. Upgrade to Academica PRO for "
+"Elementor integration, 4 homepage templates, and advanced customization "
+"options."
 msgstr ""
 
 #: inc/admin/admin.php:201
@@ -140,12 +163,20 @@ msgstr ""
 msgid "Academica PRO Showcase"
 msgstr ""
 
+#: inc/customizer/bootstrap.php:96
+msgid "Accent Color"
+msgstr ""
+
 #: inc/admin/academica-notices.php:69 inc/admin/admin.php:31
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
 #: inc/admin/notice-review.php:74
 msgid "Add a Rating for Academica"
+msgstr ""
+
+#: inc/admin/admin.php:228
+msgid "Advanced (3 menus, social icons, custom buttons)"
 msgstr ""
 
 #: index.php:27
@@ -158,7 +189,7 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: functions.php:537
+#: functions.php:581
 #, php-format
 msgid "Articles posted by %s"
 msgstr ""
@@ -166,6 +197,18 @@ msgstr ""
 #: archive.php:23
 #, php-format
 msgid "Author Archives: %s"
+msgstr ""
+
+#: inc/admin/admin.php:227
+msgid "Basic (1 menu)"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:155
+msgid "Blog Options"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:114
+msgid "Body Text Color"
 msgstr ""
 
 #. Comments and trackbacks closed
@@ -186,12 +229,28 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
+#: inc/customizer/bootstrap.php:137
+msgid ""
+"Choose a font stack for your site. System fonts load faster and provide "
+"excellent readability."
+msgstr ""
+
 #: inc/widgets.php:121 inc/wpzoom-widgets.php:126
 msgid "Choose category:"
 msgstr ""
 
-#: functions.php:420
+#: inc/customizer/bootstrap.php:168
+msgid ""
+"Choose how to display post content on blog pages, archives, and search "
+"results."
+msgstr ""
+
+#: functions.php:464
 msgid "Choose layout for this post:"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:145
+msgid "Classical (Elegant)"
 msgstr ""
 
 #: comments.php:23
@@ -210,21 +269,29 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:245
+#: content.php:34 content.php:44
+msgid "Continue Reading"
+msgstr ""
+
+#: functions.php:298
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/admin/admin.php:226
+#: inc/admin/admin.php:236
 msgid "Custom Homepage"
 msgstr ""
 
-#: inc/admin/admin.php:206
+#: inc/admin/admin.php:216
 msgid "Custom Widgets"
 msgstr ""
 
 #: archive.php:26
 #, php-format
 msgid "Daily Archives: %s"
+msgstr ""
+
+#: functions.php:35
+msgid "Dark Gray"
 msgstr ""
 
 #. %1$s current user display name.
@@ -237,12 +304,8 @@ msgid ""
 "this theme."
 msgstr ""
 
-#: functions.php:424
+#: functions.php:468
 msgid "Default"
-msgstr ""
-
-#: inc/admin/admin.php:231
-msgid "Demo Content Importer"
 msgstr ""
 
 #: inc/admin/admin.php:53
@@ -257,23 +320,35 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: content-single.php:14 content-page.php:23 content.php:24 image.php:91
+#: image.php:91
 msgid "Edit"
 msgstr ""
 
-#: functions.php:540
+#: inc/admin/admin.php:206
+msgid "Elementor Integration"
+msgstr ""
+
+#: inc/admin/admin.php:226
+msgid "Enhanced Header Options"
+msgstr ""
+
+#: functions.php:584
 msgid "Error 404"
 msgstr ""
 
-#: inc/admin/admin.php:246
+#: inc/admin/admin.php:256
 msgid "Events Plugin Integration"
 msgstr ""
 
-#: inc/admin/admin.php:273
+#: functions.php:69
+msgid "Extra Large"
+msgstr ""
+
+#: inc/admin/admin.php:283
 msgid "Fast & Friendly Email Support"
 msgstr ""
 
-#: inc/admin/admin.php:221
+#: inc/admin/admin.php:231
 msgid "Featured Area on Homepage (Slideshow)"
 msgstr ""
 
@@ -281,20 +356,29 @@ msgstr ""
 msgid "Features"
 msgstr ""
 
-#: functions.php:112
+#: inc/customizer/bootstrap.php:136
+msgid "Font Family"
+msgstr ""
+
+#: functions.php:165
 msgid "Footer"
 msgstr ""
 
-#: functions.php:26
+#: functions.php:81
 msgid "Footer Menu"
 msgstr ""
 
 #. Name of the template
+#: template-full-width.php:2
 msgid "Full Width"
 msgstr ""
 
-#: functions.php:432
+#: functions.php:476
 msgid "Full Width (no sidebars)"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:144
+msgid "Geometric (Contemporary)"
 msgstr ""
 
 #: inc/admin/admin.php:59 inc/admin/admin.php:121
@@ -306,20 +390,20 @@ msgstr ""
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/admin/admin.php:216
-msgid "Header Menus"
-msgstr ""
-
 #: inc/admin/notice-review.php:75
 msgid "Hide this notice"
 msgstr ""
 
-#: functions.php:473
+#: functions.php:517
 msgid "Home"
 msgstr ""
 
+#: inc/admin/admin.php:211
+msgid "Homepage Templates"
+msgstr ""
+
 #: inc/admin/admin.php:183
-msgid "http://demo.wpzoom.com/?theme=academica-pro-3"
+msgid "https://demo.wpzoom.com/?theme=academica-pro-3"
 msgstr ""
 
 #: inc/admin/admin.php:137
@@ -338,7 +422,7 @@ msgstr ""
 msgid "https://www.wpzoom.com/showcase/theme/academica-pro-3/"
 msgstr ""
 
-#: inc/admin/admin.php:61 inc/admin/admin.php:169 inc/admin/admin.php:279
+#: inc/admin/admin.php:61 inc/admin/admin.php:169 inc/admin/admin.php:289
 msgid "https://www.wpzoom.com/themes/academica-pro-3/"
 msgstr ""
 
@@ -347,11 +431,16 @@ msgstr ""
 msgid "https://www.wpzoom.com/themes/academica/"
 msgstr ""
 
+#: inc/customizer/bootstrap.php:141
+msgid "Humanist (Friendly & Readable)"
+msgstr ""
+
 #: inc/admin/admin.php:166
 msgid ""
 "If you like the free version of this theme, you will LOVE the full version "
-"of Academica which includes unique custom widgets, additional features and "
-"more useful options to customize your website."
+"of Academica which includes Elementor integration, unique custom widgets, 4 "
+"homepage templates, and dozens of additional features to customize your "
+"website."
 msgstr ""
 
 #: inc/wpzoom-widgets.php:149
@@ -368,6 +457,10 @@ msgid ""
 "recommended plugins."
 msgstr ""
 
+#: inc/customizer/bootstrap.php:147
+msgid "Industrial (Bold & Strong)"
+msgstr ""
+
 #: 404.php:28
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
@@ -380,12 +473,20 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: functions.php:235 comments.php:15 content.php:21
+#: functions.php:64
+msgid "Large"
+msgstr ""
+
+#: functions.php:288 comments.php:15 content.php:21
 msgid "Leave a comment"
 msgstr ""
 
 #: inc/customizer/bootstrap.php:61
 msgid "Left"
+msgstr ""
+
+#: functions.php:40
+msgid "Light Gray"
 msgstr ""
 
 #: inc/customizer/bootstrap.php:21 inc/customizer/bootstrap.php:34
@@ -394,6 +495,14 @@ msgstr ""
 
 #: inc/customizer/bootstrap.php:65
 msgid "Logo Position"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:115
+msgid "Main text color for content and paragraphs."
+msgstr ""
+
+#: inc/customizer/bootstrap.php:146
+msgid "Monospace (Code & Technical)"
 msgstr ""
 
 #: archive.php:29
@@ -413,11 +522,15 @@ msgid ""
 "time."
 msgstr ""
 
+#: inc/customizer/bootstrap.php:142
+msgid "Neo-Grotesque (Clean & Modern)"
+msgstr ""
+
 #: comments.php:25
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: functions.php:394
+#: functions.php:438
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -434,7 +547,7 @@ msgstr ""
 msgid "Number of posts to show:"
 msgstr ""
 
-#: functions.php:428
+#: functions.php:472
 msgid "Only Left Sidebar"
 msgstr ""
 
@@ -442,12 +555,12 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: functions.php:210 functions.php:544
+#: functions.php:263 functions.php:588
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: content-single.php:21 content-page.php:17 image.php:64
+#: content-single.php:20 content-page.php:17 image.php:64
 msgid "Pages:"
 msgstr ""
 
@@ -456,20 +569,24 @@ msgstr ""
 msgid "Permanent Link to %s"
 msgstr ""
 
-#: functions.php:406
+#: inc/customizer/bootstrap.php:167
+msgid "Post Content Display on Archives"
+msgstr ""
+
+#: functions.php:450
 msgid "Post Layout"
 msgstr ""
 
-#: functions.php:391
+#: functions.php:435
 msgid "Post navigation"
 msgstr ""
 
-#: functions.php:533
+#: functions.php:577
 #, php-format
 msgid "Posts tagged &#39;%s&#39;"
 msgstr ""
 
-#: functions.php:555
+#: functions.php:599
 #, php-format
 msgid ""
 "Powered by <a href=\"%s\">WordPress</a> / Academica WordPress Theme by <a "
@@ -479,6 +596,10 @@ msgstr ""
 #: single.php:29
 msgctxt "Previous post link"
 msgid "&larr;"
+msgstr ""
+
+#: functions.php:30
+msgid "Primary Blue"
 msgstr ""
 
 #: image.php:71
@@ -494,6 +615,10 @@ msgstr ""
 msgid "Recommended Plugins"
 msgstr ""
 
+#: functions.php:59
+msgid "Regular"
+msgstr ""
+
 #: inc/customizer/bootstrap.php:48
 msgid "Retina Ready?"
 msgstr ""
@@ -502,11 +627,15 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
+#: inc/customizer/bootstrap.php:148
+msgid "Rounded (Friendly & Soft)"
+msgstr ""
+
 #: searchform.php:7 searchform.php:8 searchform.php:9
 msgid "Search"
 msgstr ""
 
-#: functions.php:530
+#: functions.php:574
 #, php-format
 msgid "Search results for &#39;%s&#39;"
 msgstr ""
@@ -516,23 +645,41 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
+#: inc/customizer/bootstrap.php:171
+msgid "Show Excerpts (Recommended)"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:172
+msgid "Show Full Content"
+msgstr ""
+
 #. Name of the template
+#: template-sidebar-left.php:2
 msgid "Sidebar Left"
 msgstr ""
 
 #. Name of the template
+#: template-sidebar-right.php:2
 msgid "Sidebar Right"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:147
 msgid "Sidebar: Left"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:156
 msgid "Sidebar: Right"
 msgstr ""
 
-#: inc/admin/admin.php:241
+#: inc/customizer/bootstrap.php:149
+msgid "Slab Serif (Strong Serifs)"
+msgstr ""
+
+#: functions.php:54
+msgid "Small"
+msgstr ""
+
+#: inc/admin/admin.php:251
 msgid "Social Icons in the Header"
 msgstr ""
 
@@ -542,16 +689,20 @@ msgid ""
 "different keywords."
 msgstr ""
 
-#: functions.php:138
+#: functions.php:191
 msgid "Start here"
 msgstr ""
 
-#: inc/admin/admin.php:271
+#: inc/admin/admin.php:281
 msgid "Support"
 msgstr ""
 
-#: inc/admin/admin.php:138 inc/admin/admin.php:272
+#: inc/admin/admin.php:138 inc/admin/admin.php:282
 msgid "Support Forum"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:140
+msgid "System UI (Recommended)"
 msgstr ""
 
 #: archive.php:19
@@ -559,7 +710,7 @@ msgstr ""
 msgid "Tag Archives: %s"
 msgstr ""
 
-#: content-single.php:29
+#: content-single.php:28
 msgid "Tags:"
 msgstr ""
 
@@ -574,7 +725,7 @@ msgstr ""
 msgid "Theme Documentation"
 msgstr ""
 
-#: inc/admin/admin.php:251
+#: inc/admin/admin.php:261
 msgid "Theme Options"
 msgstr ""
 
@@ -586,7 +737,7 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
-#: functions.php:25
+#: functions.php:80
 msgid "Top Menu"
 msgstr ""
 
@@ -597,30 +748,39 @@ msgid ""
 "href=\"#respond\" title=\"Post a comment\">post a comment</a>."
 msgstr ""
 
-#: inc/admin/admin.php:266
+#: inc/customizer/bootstrap.php:143
+msgid "Transitional (Academic Serif)"
+msgstr ""
+
+#: inc/customizer/bootstrap.php:124
+msgid "Typography"
+msgstr ""
+
+#: inc/admin/admin.php:276
 msgid "Typography Options"
 msgstr ""
 
-#: inc/admin/admin.php:62 inc/admin/admin.php:280
+#: inc/admin/admin.php:62 inc/admin/admin.php:170 inc/admin/admin.php:290
 msgid "Upgrade to Academica PRO"
-msgstr ""
-
-#: inc/admin/admin.php:170
-msgid "Upgrade to academica PRO"
 msgstr ""
 
 #: inc/admin/admin.php:180
 msgid ""
-"Upgrading to Academica PRO you will unlock a dozen of unique features that "
-"will take your website to the next level. See in the table below just a few "
-"of the features included in the PRO version."
+"Upgrading to Academica PRO you will unlock powerful features like Elementor "
+"integration, 4 homepage templates, and dozens of unique customization "
+"options that will take your website to the next level. See in the table "
+"below the key features included in the PRO version."
+msgstr ""
+
+#: inc/customizer/bootstrap.php:97
+msgid "Used for links, buttons, and highlights throughout the site."
 msgstr ""
 
 #: inc/admin/admin.php:184
 msgid "View Academica PRO Demo"
 msgstr ""
 
-#: functions.php:359
+#: functions.php:403
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
@@ -634,11 +794,15 @@ msgstr ""
 msgid "Welcome to Academica Theme"
 msgstr ""
 
+#: functions.php:45
+msgid "White"
+msgstr ""
+
 #: inc/admin/admin.php:177
 msgid "Why Upgrade?"
 msgstr ""
 
-#: inc/admin/admin.php:211
+#: inc/admin/admin.php:221
 msgid "Widget Areas"
 msgstr ""
 
@@ -648,7 +812,7 @@ msgctxt "Widget title link"
 msgid "%s &raquo;"
 msgstr ""
 
-#: inc/admin/admin.php:236
+#: inc/admin/admin.php:246
 msgid "WooCommerce Support"
 msgstr ""
 

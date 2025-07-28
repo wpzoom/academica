@@ -1,13 +1,13 @@
-# Academica Theme #
+# Academica Theme
 **Contributors:** [WPZOOM](https://profiles.wordpress.org/WPZOOM)  
-**Requires at least:** 5.2  
-**Tested up to:** 5.8  
-**Version:** 1.2.0  
+**Requires at least:** 6.0
+**Tested up to:** 6.8
+**Version:** 2.1.0
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 **Tags:** two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, blog, rtl-language-support 
 
-## Description ##
+## Description
 
 Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.
 
@@ -17,7 +17,7 @@ Please note:
 More customization options & features are available in the PRO version.
 https://www.wpzoom.com/themes/academica-pro-3/
 
-## Installation ##
+## Installation
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Type in Academica in the search form and press the 'Enter' key on your keyboard.
@@ -26,7 +26,7 @@ https://www.wpzoom.com/themes/academica-pro-3/
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 
-## Copyright ##
+## Copyright
 
 Academica WordPress Theme, Copyright 2016-2021 WordPress.org
 Academica is distributed under the terms of the GNU GPL

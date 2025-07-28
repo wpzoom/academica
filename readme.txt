@@ -2,17 +2,14 @@
 Contributors: WPZOOM
 Requires at least: 6.0
 Tested up to: 6.8
-Version: 2.0.8
+Version: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, blog, rtl-language-support
 
 == Description ==
 
-Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.
-
-Please note:
-The Footer Menu is best suitable for short menues with just a few links, as it only supports one menu level.
+Description: Academica is a lightweight, accessible, and privacy-friendly WordPress theme designed for schools, universities, and educational institutions. With a clean three-column layout and modern design, it’s perfect for presenting academic programs, events, and news. The theme is fully customizable, GDPR-compliant, and optimized for fast performance. It uses system fonts only (no Google Fonts) for better privacy and speed. Looking for more features? Upgrade to Academica PRO 3.0 to unlock advanced customization options, Elementor integration, additional layouts, and premium support - ideal for creating a professional education website.
 
 More customization options & features are available in the PRO version. https://www.wpzoom.com/themes/academica-pro-3/
 
@@ -27,20 +24,14 @@ More customization options & features are available in the PRO version. https://
 
 == Changelog ==
 
-= 2.0.9 =
+= 2.1.0 =
 * Added: Typography section in Customizer with modern font stacks (10 scientific options)
 * Added: Body Text Color option in Customizer (Colors section) for main content color control
 * Added: Accent Color option in Customizer (Colors section) for easy brand customization
 * Added: Blog Options in Customizer to choose between excerpts or full content on archives (default: excerpts)
 * Performance: Replaced Google Fonts with system font stack for faster loading
-* Readability: Made all headings bold (font-weight: 700) for better hierarchy
-* Readability: Increased minimum text size from 10-12px to 14px throughout
-* Readability: Improved line-height for better text flow
 * Added: Complete Gutenberg/Block Editor support with custom color palette
-* Added: Accessibility improvements with skip-link and screen reader support
-* Updated: About page with new Pro features (Elementor integration, 4 homepage templates)
 * Fixed: Site title H1 structure for better SEO (now uses div instead of h1)
-* Fixed: Admin widgets page font consistency
 
 = 2.0.8 =
 * Minor fixes for PHP 8.0+

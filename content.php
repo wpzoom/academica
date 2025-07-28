@@ -20,8 +20,7 @@
 				echo ' <span class="sep">/ </span> ';
 				comments_popup_link( __( 'Leave a comment', 'academica' ) );
 			endif;
-		endif;
-		edit_post_link( __( 'Edit', 'academica' ), '<span class="edit-link"><span class="sep"> / </span>', '</span>' ); ?>
+		endif; ?>
 	</p><!-- end .entry-meta -->
 	<div class="entry-summary">
 		<?php

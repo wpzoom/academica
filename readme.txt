@@ -28,6 +28,7 @@ More customization options & features are available in the PRO version. https://
 == Changelog ==
 
 = 2.0.9 =
+* Added: Typography section in Customizer with modern font stacks (10 scientific options)
 * Added: Body Text Color option in Customizer (Colors section) for main content color control
 * Added: Accent Color option in Customizer (Colors section) for easy brand customization
 * Added: Blog Options in Customizer to choose between excerpts or full content on archives (default: excerpts)

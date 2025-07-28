@@ -18,8 +18,13 @@ Domain Path: /languages/
 /* =General
 -------------------------------------------------------------- */
 
+
+:root {
+    --wp--preset--spacing--x-small: 20px;
+}
+
+
 html {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1;
 	overflow-y: scroll;
@@ -33,6 +38,7 @@ html {
 
 body {
 	color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
 	margin: 0;
@@ -219,8 +225,6 @@ textarea {
  	font-size: 100%;
 	margin: 0;
 	vertical-align: baseline;
-	*vertical-align: middle;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 button,
@@ -361,12 +365,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+	font-weight: 600;
 	margin: 0;
 	padding: 0;
 }
 h1 {
-	clear: both;
 	font-size: 40px;
  	line-height: 1.2;
 	margin-bottom: 30px;
@@ -486,7 +489,7 @@ img.aligncenter,
 -------------------------------------------------------------- */
 
 #header {
- 	margin: 0 0 20px;
+ 	margin: 0 0 30px;
  	background-color: #0A5794;
  	background-size: cover;
  	background-repeat: no-repeat;
@@ -505,10 +508,8 @@ img.aligncenter,
 }
 
 #site-title {
-	font-size: 30pt;
-	letter-spacing: inherit;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: bold;
+	font-size: 40px;
+	font-weight: 600;
 	margin: 0;
  	color: #fff
 }
@@ -592,7 +593,6 @@ img.aligncenter,
 	color: #fff;
 	display: block;
 	padding: 5px 35px 15px 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
     opacity: .8;
 }
 
@@ -749,15 +749,16 @@ img.aligncenter,
 
 
 .title-header {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 600;
 	font-size: 36px;
  	word-wrap: break-word;
  	margin: 0 0 15px;
 }
 
+.search .title-header,
 .archive .title-header {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 22px;
 }
 
 /* Breadcrumb */
@@ -786,10 +787,8 @@ img.aligncenter,
 .posts .post h2,
 .posts .page h2 {
 	font-size: 36px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: normal;
 	line-height: 1.2;
-	margin: 0 0 8px;
+	margin: 0 0 15px;
 }
 
 .posts .post div.thumb {
@@ -807,17 +806,40 @@ img.aligncenter,
 	padding: 20px;
 }
 
+.entry-content a {
+    text-decoration: underline;
+}
 
+.entry-content a:hover {
+    text-decoration: none;
+}
+
+.wp-block-read-more:where(:not([style*=text-decoration])) {
+    text-decoration: none !important;
+}
+
+.wp-block-post-title :where(a) {
+    text-decoration: none !important;
+}
+
+.wp-block-query .is-layout-grid li {
+    list-style-type: none;
+}
+
+ul.is-layout-grid {
+    margin-left: 0;
+}
+
+.wp-block-buttons .wp-block-button__link {
+    text-decoration: none !important;
+}
 
 div.single h2,
 div.single h3,
 div.single h4,
 div.single h5,
 div.single h6 {
-	clear: both;
 	margin: 15px 0 15px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: bold;
 }
 
 .column-content table {
@@ -927,14 +949,13 @@ div.single h6 {
 .entry-caption,
 .wp-caption-text {
 	color: #666;
-	font-size: 14px;
  	margin: 0 0 20px;
 }
 
 .entry-meta {
  	border-bottom: 1px solid #eee;
 	padding: 0 0 20px;
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 
 .attachment .entry-attachment {
@@ -1069,7 +1090,6 @@ p.pages {
     margin-left: 10px;
     font-weight: normal;
     text-transform: none;
-    font-family: inherit;
     font-size: 14px;
 }
 
@@ -1242,9 +1262,6 @@ p.pages {
 .widget h3.heading {
 	font-size: 24px;
 	line-height: 1.2;
-	font-weight: normal;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
-	line-height: inherit;
 	border-bottom: 1px solid #eee;
 	padding: 0 0 15px;
 	margin: 0 0 20px;
@@ -1390,7 +1407,6 @@ p.pages {
 .academica-featured-posts-gallery .post h3 {
 	margin: 0 0 10px;
 	font-size: 18px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 

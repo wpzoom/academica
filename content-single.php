@@ -10,8 +10,7 @@
 
 	<div class="entry-meta">
 		<?php
-		academica_entry_meta();
-		edit_post_link( __( 'Edit', 'academica' ), '<span class="edit-link"> / ', '</span>' ); ?>
+		academica_entry_meta(); ?>
 	</div><!-- end .entry-meta -->
 
 	<div class="entry-content clearfix">

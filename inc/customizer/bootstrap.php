@@ -119,6 +119,37 @@ function academica_customizer_add_sections_and_options( $wp_customize ) {
         )
     ) );
 
+    // Add Typography Section
+    $wp_customize->add_section( 'academica_typography', array(
+        'title'    => __( 'Typography', 'academica' ),
+        'priority' => 30,
+    ) );
+
+    // Add Font Stack Setting
+    $wp_customize->add_setting( 'academica_font_stack', array(
+        'default'           => 'system-ui',
+        'sanitize_callback' => 'academica_sanitize_font_stack',
+    ) );
+
+    $wp_customize->add_control( 'academica_font_stack', array(
+        'type'     => 'select',
+        'label'    => __( 'Font Family', 'academica' ),
+        'description' => __( 'Choose a font stack for your site. System fonts load faster and provide excellent readability.', 'academica' ),
+        'section'  => 'academica_typography',
+        'choices'  => array(
+            'system-ui'     => __( 'System UI (Recommended)', 'academica' ),
+            'humanist'      => __( 'Humanist (Friendly & Readable)', 'academica' ),
+            'neo-grotesque' => __( 'Neo-Grotesque (Clean & Modern)', 'academica' ),
+            'transitional'  => __( 'Transitional (Academic Serif)', 'academica' ),
+            'geometric'     => __( 'Geometric (Contemporary)', 'academica' ),
+            'classical'     => __( 'Classical (Elegant)', 'academica' ),
+            'monospace'     => __( 'Monospace (Code & Technical)', 'academica' ),
+            'industrial'    => __( 'Industrial (Bold & Strong)', 'academica' ),
+            'rounded'       => __( 'Rounded (Friendly & Soft)', 'academica' ),
+            'slab-serif'    => __( 'Slab Serif (Strong Serifs)', 'academica' ),
+        ),
+    ) );
+
     // Add Blog Options Section
     $wp_customize->add_section( 'academica_blog_options', array(
         'title'    => __( 'Blog Options', 'academica' ),
@@ -188,6 +219,20 @@ function acedemica_customizer_display_css() {
                 'color' => $body_text_color
             )
         );
+    }
+
+    // Typography - Font Stack
+    $font_stack = get_theme_mod( 'academica_font_stack', 'system-ui' );
+    if ( 'system-ui' != $font_stack ) {
+        $font_families = academica_get_font_stacks();
+        if ( isset( $font_families[ $font_stack ] ) ) {
+            $styles[] = array(
+                'selectors' => 'html, body',
+                'declarations' => array(
+                    'font-family' => $font_families[ $font_stack ]
+                )
+            );
+        }
     }
 
     if ( '#0A5794' != ( $accent_color = get_theme_mod( 'academica-accent-color', '#0A5794' ) ) ) {

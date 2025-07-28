@@ -406,7 +406,7 @@ function academica_entry_meta() {
 
 	// Translators: 1 is the author's name, 2 is category, and 3 is the date.
 	if ( $categories_list ) {
-		$utility_text = __( '<span class="by-author">By %1$s </span>in <span class="category">%2$s</span> on <span class="datetime">%3$s</span>.', 'academica' );
+		$utility_text = __( '<span class="by-author">By %1$s </span>in <span class="category">%2$s</span> on <span class="datetime">%3$s</span>', 'academica' );
 	} else {
 		$utility_text = __( '<span class="by-author">By %1$s </span>on <span class="datetime">%3$s</span>.', 'academica' );
 	}
@@ -710,5 +710,36 @@ if (!function_exists('academica_sanitize_content_display')) {
     function academica_sanitize_content_display($input) {
         $valid_options = array('excerpt', 'full');
         return in_array($input, $valid_options) ? $input : 'excerpt';
+    }
+}
+
+/**
+ * Sanitize font stack setting
+ */
+if (!function_exists('academica_sanitize_font_stack')) {
+    function academica_sanitize_font_stack($input) {
+        $valid_options = array('system-ui', 'transitional', 'humanist', 'geometric', 'classical', 'neo-grotesque', 'monospace', 'industrial', 'rounded', 'slab-serif');
+        return in_array($input, $valid_options) ? $input : 'system-ui';
+    }
+}
+
+/**
+ * Get available font stacks (based on Modern Font Stacks)
+ * @see https://github.com/system-fonts/modern-font-stacks
+ */
+if (!function_exists('academica_get_font_stacks')) {
+    function academica_get_font_stacks() {
+        return array(
+            'system-ui'     => 'system-ui, sans-serif',
+            'transitional'  => 'Charter, "Bitstream Charter", "Sitka Text", Cambria, serif',
+            'humanist'      => 'Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif',
+            'geometric'     => 'Avenir, "Avenir Next LT Pro", Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif',
+            'classical'     => 'Optima, Candara, "Noto Sans", source-sans-pro, sans-serif',
+            'neo-grotesque' => 'Inter, Roboto, "Helvetica Neue", "Arial Nova", Nimbus Sans, Arial, sans-serif',
+            'monospace'     => '"SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace',
+            'industrial'    => 'Bahnschrift, "DIN Alternate", "Franklin Gothic Medium", "Nimbus Sans Narrow", sans-serif-condensed, sans-serif',
+            'rounded'       => 'ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa, Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif',
+            'slab-serif'    => 'Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif',
+        );
     }
 }

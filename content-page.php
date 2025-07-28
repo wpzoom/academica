@@ -20,6 +20,4 @@
 		) ); ?>
 	</div><!-- end .entry-content -->
 
-	<?php edit_post_link( __( 'Edit', 'academica' ), '<span class="edit-link">', '</span>' ); ?>
-
 </div><!-- end #post-## -->

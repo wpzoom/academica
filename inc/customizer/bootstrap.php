@@ -83,6 +83,42 @@ function academica_customizer_add_sections_and_options( $wp_customize ) {
         )
     ) );
 
+    // Add Accent Color Setting
+    $wp_customize->add_setting( 'academica-accent-color', array(
+        'default' => '#0A5794',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control(
+        $wp_customize,
+        'academica-accent-color',
+        array(
+            'label' => __( 'Accent Color', 'academica' ),
+            'description' => __( 'Used for links, buttons, and highlights throughout the site.', 'academica' ),
+            'priority' => 1,
+            'section' => 'colors',
+            'settings' => 'academica-accent-color'
+        )
+    ) );
+
+    // Add Body Text Color Setting
+    $wp_customize->add_setting( 'academica-body-text-color', array(
+        'default' => '#333333',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control(
+        $wp_customize,
+        'academica-body-text-color',
+        array(
+            'label' => __( 'Body Text Color', 'academica' ),
+            'description' => __( 'Main text color for content and paragraphs.', 'academica' ),
+            'priority' => 2,
+            'section' => 'colors',
+            'settings' => 'academica-body-text-color'
+        )
+    ) );
+
     // Add Blog Options Section
     $wp_customize->add_section( 'academica_blog_options', array(
         'title'    => __( 'Blog Options', 'academica' ),
@@ -119,6 +155,60 @@ function acedemica_customizer_display_css() {
             'selectors' => '#header, .navbar-nav ul',
             'declarations' => array(
                 'background-color' => $header_background_color
+            )
+        );
+    }
+
+    // Header Text Color
+    $header_text_color = get_header_textcolor();
+    if ( ! empty( $header_text_color ) && 'blank' != $header_text_color && 'ffffff' != $header_text_color ) {
+        $styles[] = array(
+            'selectors' => '#site-title, #site-title a, #site-description',
+            'declarations' => array(
+                'color' => '#' . $header_text_color
+            )
+        );
+    }
+
+    // Hide header text if set to blank
+    if ( 'blank' == $header_text_color ) {
+        $styles[] = array(
+            'selectors' => '#site-title, #site-description',
+            'declarations' => array(
+                'display' => 'none'
+            )
+        );
+    }
+
+    // Body Text Color
+    if ( '#333333' != ( $body_text_color = get_theme_mod( 'academica-body-text-color', '#333333' ) ) ) {
+        $styles[] = array(
+            'selectors' => 'body, p',
+            'declarations' => array(
+                'color' => $body_text_color
+            )
+        );
+    }
+
+    if ( '#0A5794' != ( $accent_color = get_theme_mod( 'academica-accent-color', '#0A5794' ) ) ) {
+        $styles[] = array(
+            'selectors' => 'a, .read-more, .read-more-link, .has-primary-blue-color',
+            'declarations' => array(
+                'color' => $accent_color
+            )
+        );
+
+        $styles[] = array(
+            'selectors' => '.pagination .page-numbers:hover, .has-primary-blue-background-color, .skip-link, button, html input[type="button"], input[type="reset"], input[type="submit"]',
+            'declarations' => array(
+                'background-color' => $accent_color
+            )
+        );
+
+        $styles[] = array(
+            'selectors' => '.wp-block-pullquote',
+            'declarations' => array(
+                'border-left-color' => $accent_color
             )
         );
     }

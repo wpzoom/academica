@@ -28,11 +28,17 @@ More customization options & features are available in the PRO version. https://
 == Changelog ==
 
 = 2.0.9 =
+* Added: Body Text Color option in Customizer (Colors section) for main content color control
+* Added: Accent Color option in Customizer (Colors section) for easy brand customization
 * Added: Blog Options in Customizer to choose between excerpts or full content on archives (default: excerpts)
 * Performance: Replaced Google Fonts with system font stack for faster loading
+* Readability: Made all headings bold (font-weight: 700) for better hierarchy
 * Readability: Increased minimum text size from 10-12px to 14px throughout
 * Readability: Improved line-height for better text flow
 * Added: Complete Gutenberg/Block Editor support with custom color palette
+* Added: Accessibility improvements with skip-link and screen reader support
+* Updated: About page with new Pro features (Elementor integration, 4 homepage templates)
+* Fixed: Site title H1 structure for better SEO (now uses div instead of h1)
 * Fixed: Admin widgets page font consistency
 
 = 2.0.8 =

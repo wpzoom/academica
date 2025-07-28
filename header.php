@@ -31,7 +31,7 @@
 			<div class="inner-wrap">
 
 				<div id="logo" class="<?php academica_logo_position(); ?>">
-					<?php if ( ! academica_has_logo() ) : ?> <h1 id="site-title"> <?php endif; ?>
+					<?php if ( ! academica_has_logo() ) : ?> <div id="site-title"> <?php endif; ?>
 
 						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo( 'description' ); ?>" rel="home">
 
@@ -45,7 +45,7 @@
 
 						</a>
 
-					<?php if ( ! academica_has_logo() ) : ?> </h1> <?php endif; ?>
+					<?php if ( ! academica_has_logo() ) : ?> </div> <?php endif; ?>
 
 					<p id="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- end #logo -->

@@ -40,7 +40,7 @@ function academica_custom_header_setup() {
 		'width'                  => 1600,
 		'height'                 => 300,
 		'flex-height'            => true,
-		// 'wp-head-callback'       => 'academica_header_style',
+		'wp-head-callback'       => 'academica_header_style',
 		'admin-head-callback'    => 'academica_admin_header_style',
 		'admin-preview-callback' => 'academica_admin_header_image',
 	);
@@ -152,3 +152,46 @@ function academica_admin_header_image() { ?>
 	</div>
 <?php }
 endif; // academica_admin_header_image
+
+if ( ! function_exists( 'academica_header_style' ) ) :
+/**
+ * Styles the header image and text displayed on the blog.
+ *
+ * @see academica_custom_header_setup().
+ *
+ * @since Academica 1.2.2-wpcom
+ */
+function academica_header_style() {
+	$header_text_color = get_header_textcolor();
+
+	// If no custom options for text are set, let's bail.
+	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
+		return;
+	}
+
+	// If we get this far, we have custom styles. Let's do this.
+	?>
+	<style type="text/css">
+	<?php
+		// Has the text been hidden?
+		if ( 'blank' == $header_text_color ) :
+	?>
+		#site-title,
+		#site-description {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	<?php
+		// If the user has set a custom color for the text use that.
+		else :
+	?>
+		#site-title,
+		#site-title a,
+		#site-description {
+			color: #<?php echo esc_attr( $header_text_color ); ?>;
+		}
+	<?php endif; ?>
+	</style>
+	<?php
+}
+endif; // academica_header_style

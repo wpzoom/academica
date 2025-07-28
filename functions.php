@@ -24,11 +24,12 @@ function academica_setup() {
 	add_theme_support( 'align-wide' );
 
 	// Block Editor Color Palette
+	$accent_color = get_theme_mod( 'academica-accent-color', '#0A5794' );
 	add_theme_support( 'editor-color-palette', array(
 		array(
 			'name'  => __( 'Primary Blue', 'academica' ),
 			'slug'  => 'primary-blue',
-			'color' => '#0A5794',
+			'color' => $accent_color,
 		),
 		array(
 			'name'  => __( 'Dark Gray', 'academica' ),

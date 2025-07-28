@@ -97,7 +97,7 @@ if (!function_exists('academica_display_theme_page')) {
                     </h1>
 
 
-                    <?php esc_html_e('Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.', 'academica'); ?>
+                    <?php esc_html_e('Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages. Upgrade to Academica PRO for Elementor integration, 4 homepage templates, and advanced customization options.', 'academica'); ?>
 
                     <div class="theme-links wpz-clearfix">
                         <p>
@@ -163,7 +163,7 @@ if (!function_exists('academica_display_theme_page')) {
 								<?php esc_html_e('Academica Pro', 'academica'); ?>
 							</h4>
 							<p class="about">
-								<?php esc_html_e('If you like the free version of this theme, you will LOVE the full version of Academica which includes unique custom widgets, additional features and more useful options to customize your website.', 'academica'); ?>
+								<?php esc_html_e('If you like the free version of this theme, you will LOVE the full version of Academica which includes Elementor integration, unique custom widgets, 4 homepage templates, and dozens of additional features to customize your website.', 'academica'); ?>
 							</p>
 							<p>
 								<a href="<?php echo esc_url(__('https://www.wpzoom.com/themes/academica-pro-3/', 'academica')); ?>" target="_blank" class="button button-primary">
@@ -177,7 +177,7 @@ if (!function_exists('academica_display_theme_page')) {
 								<?php esc_html_e('Why Upgrade?', 'academica'); ?>
 							</h4>
 							<p class="about">
-								<?php esc_html_e('Upgrading to Academica PRO you will unlock a dozen of unique features that will take your website to the next level. See in the table below just a few of the features included in the PRO version.', 'academica'); ?>
+								<?php esc_html_e('Upgrading to Academica PRO you will unlock powerful features like Elementor integration, 4 homepage templates, and dozens of unique customization options that will take your website to the next level. See in the table below the key features included in the PRO version.', 'academica'); ?>
 							</p>
 							<p>
 								<a href="<?php echo esc_url(__('https://demo.wpzoom.com/?theme=academica-pro-3', 'academica')); ?>" target="_blank" class="button button-primary">
@@ -203,6 +203,16 @@ if (!function_exists('academica_display_theme_page')) {
 					</thead>
 					<tbody>
                         <tr>
+                            <td><h3><?php esc_html_e('Elementor Integration', 'academica'); ?></h3></td>
+                            <td><span class="dashicons dashicons-no"></span></td>
+                            <td><span class="dashicons dashicons-yes"></span></td>
+                        </tr>
+                        <tr>
+                            <td><h3><?php esc_html_e('Homepage Templates', 'academica'); ?></h3></td>
+                            <td><?php esc_html_e('1', 'academica'); ?></td>
+                            <td><?php esc_html_e('4 (Default, Full-width, Slideshow Top, Small Slideshow)', 'academica'); ?></td>
+                        </tr>
+                        <tr>
                             <td><h3><?php esc_html_e('Custom Widgets', 'academica'); ?></h3></td>
                             <td><?php esc_html_e('2', 'academica'); ?></td>
                             <td><?php esc_html_e('6 (Custom Menu, Image Box, Testimonials, Recent Posts, etc.)', 'academica'); ?></td>
@@ -213,9 +223,9 @@ if (!function_exists('academica_display_theme_page')) {
                             <td><?php esc_html_e('11 (4 on Homepage)', 'academica'); ?></td>
                         </tr>
                         <tr>
-                            <td><h3><?php esc_html_e('Header Menus', 'academica'); ?></h3></td>
-                            <td><?php esc_html_e('1', 'academica'); ?></td>
-                            <td><?php esc_html_e('3', 'academica'); ?></td>
+                            <td><h3><?php esc_html_e('Enhanced Header Options', 'academica'); ?></h3></td>
+                            <td><?php esc_html_e('Basic (1 menu)', 'academica'); ?></td>
+                            <td><?php esc_html_e('Advanced (3 menus, social icons, custom buttons)', 'academica'); ?></td>
                         </tr>
                         <tr>
                             <td><h3><?php esc_html_e('Featured Area on Homepage (Slideshow)', 'academica'); ?></h3></td>
@@ -228,7 +238,7 @@ if (!function_exists('academica_display_theme_page')) {
                             <td><span class="dashicons dashicons-yes"></span></td>
                         </tr>
                         <tr>
-                            <td><h3><?php esc_html_e('Demo Content Importer', 'academica'); ?></h3></td>
+                            <td><h3><?php esc_html_e('1-Click Demo Content Importer', 'academica'); ?></h3></td>
                             <td><span class="dashicons dashicons-no"></span></td>
                             <td><span class="dashicons dashicons-yes"></span></td>
                         </tr>

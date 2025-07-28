@@ -1,13 +1,13 @@
 === Academica ===
 Contributors: WPZOOM
-Requires at least: 5.2
-Tested up to: 6.3
+Requires at least: 6.0
+Tested up to: 6.8
 Version: 2.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, blog, rtl-language-support
 
-== ABOUT ACADEMICA ==
+== Description ==
 
 Academica is an education- and school-oriented CMS theme with a three-column layout and modern design. It is easy to customize and comes with a custom widget, three templates for Posts and Pages.
 

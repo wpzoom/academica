@@ -21,6 +21,21 @@ More customization options & features are available in the PRO version. https://
 4. Go to https://www.wpzoom.com/documentation/academica for a guide on how to customize this theme.
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
+== Copyright ==
+
+Academica WordPress Theme, Copyright 2025 WPZOOM BV
+Academica is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
 
 == Changelog ==
 

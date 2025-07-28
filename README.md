@@ -5,7 +5,7 @@
 **Version:** 2.1.0
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
-**Tags:** two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, blog, rtl-language-support 
+**Tags:** two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, blog, rtl-language-support, accessibility-ready
 
 ## Description
 

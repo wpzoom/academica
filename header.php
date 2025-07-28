@@ -35,7 +35,11 @@
 
 				<div id="logo" class="<?php academica_logo_position(); ?>">
 					<?php if ( ! academica_has_logo() ) : ?> 
-					<h1 id="site-title"> 
+						<?php if ( is_front_page() && is_home() ) : ?>
+						<h1 id="site-title"> 
+						<?php else : ?>
+						<div id="site-title">
+						<?php endif; ?>
 					<?php else: ?>
 					<div class="site-logo">
 					<?php endif; ?>
@@ -53,7 +57,11 @@
 						</a>
 
 					<?php if ( ! academica_has_logo() ) : ?> 
-					</h1> 
+						<?php if ( is_front_page() && is_home() ) : ?>
+						</h1> 
+						<?php else : ?>
+						</div>
+						<?php endif; ?>
 					<?php else: ?>
 					</div>
 					<?php endif; ?>

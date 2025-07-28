@@ -5,7 +5,7 @@ Tested up to: 6.8
 Version: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, blog, rtl-language-support
+Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, blog, rtl-language-support, accessibility-ready
 
 == Description ==
 
@@ -32,6 +32,19 @@ More customization options & features are available in the PRO version. https://
 * Performance: Replaced Google Fonts with system font stack for faster loading
 * Added: Complete Gutenberg/Block Editor support with custom color palette
 * Fixed: Site title H1 structure for better SEO (now uses div instead of h1)
+* Added: Accessibility-ready tag support with comprehensive accessibility improvements
+* Added: Skip links for keyboard navigation to main content
+* Enhanced: Focus indicators for all interactive elements (links, buttons, form fields)
+* Enhanced: Proper heading structure - H1 for site title on homepage only, post/page titles use H1 on individual pages
+* Enhanced: Semantic HTML5 elements - main, aside, footer, nav with proper roles
+* Enhanced: Screen reader support with improved screen-reader-text implementation
+* Enhanced: Search form accessibility with role="search" and proper ARIA labels
+* Enhanced: ARIA landmarks and labels for better navigation
+* Enhanced: Keyboard navigation for dropdown menus
+* Fixed: Mobile menu toggle accessibility with discernible name and ARIA states
+* Enhanced: Widget structure using semantic section elements
+* Enhanced: Footer navigation with proper ARIA labeling
+* Improved: JavaScript for better keyboard and screen reader support
 
 = 2.0.8 =
 * Minor fixes for PHP 8.0+

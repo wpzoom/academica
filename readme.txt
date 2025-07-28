@@ -45,6 +45,7 @@ More customization options & features are available in the PRO version. https://
 * Enhanced: Widget structure using semantic section elements
 * Enhanced: Footer navigation with proper ARIA labeling
 * Improved: JavaScript for better keyboard and screen reader support
+* Removed: Deprecated wp_title() function - now uses modern add_theme_support( 'title-tag' )
 
 = 2.0.8 =
 * Minor fixes for PHP 8.0+

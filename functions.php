@@ -235,36 +235,7 @@ function academica_widgets_count_class( $index = 1 ) {
     return ' widgets-' . $count;
 }
 
-/**
- * Creates a nicely formatted and more specific title element text
- * for output in head of document, based on current view.
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string Filtered title.
- */
-function academica_wp_title( $title, $sep ) {
 
-	if ( is_feed() )
-		return $title;
-
-	global $paged, $page;
-
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
-
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title .= " $sep $site_description";
-
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 )
-		$title .= " $sep " . sprintf( __( 'Page %s', 'academica' ), max( $paged, $page ) );
-
-	return $title;
-}
-add_filter( 'wp_title', 'academica_wp_title', 10, 2 );
 
 /**
  * Get wp_page_menu() to show a home link.

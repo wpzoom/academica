@@ -12,7 +12,7 @@
     $(function () {
 
         /**
-         * Activate superfish menu.
+         * Activate superfish menu with accessibility support.
          */
         $('.sf-menu').superfish({
             'speed': 'fast',
@@ -20,6 +20,13 @@
             'animation': {
                 'height': 'show'
             }
+        });
+
+        /**
+         * Improve keyboard navigation for menu
+         */
+        $('.sf-menu a').on('focus blur', function() {
+            $(this).parents('li').toggleClass('sfHover');
         });
 
         /**

@@ -146,27 +146,27 @@ function academica_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar: Left', 'academica' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<div id="%1$s" class="widget clearfix %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="heading">',
+		'before_widget' => '<section id="%1$s" class="widget clearfix %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Sidebar: Right', 'academica' ),
 		'id'            => 'sidebar-2',
-		'before_widget' => '<div id="%1$s" class="widget clearfix %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="heading">',
+		'before_widget' => '<section id="%1$s" class="widget clearfix %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'academica' ),
 		'id'            => 'sidebar-3',
-		'before_widget' => '<div id="%1$s" class="widget clearfix %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="heading">',
+		'before_widget' => '<section id="%1$s" class="widget clearfix %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 

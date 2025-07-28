@@ -16,9 +16,9 @@ get_header(); ?>
 	</div><!-- end .column-title -->
 
 	<?php if ( 'column-full' != $post_layout ) : ?>
-	<div class="column column-narrow">
+	<aside class="column column-narrow" role="complementary" aria-label="<?php esc_attr_e( 'Left Sidebar', 'academica' ); ?>">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	</div><!-- end .column-narrow -->
+	</aside><!-- end .column-narrow -->
 	<?php endif; ?>
 
 	<div class="column column-content single">
@@ -35,9 +35,9 @@ get_header(); ?>
 	</div><!-- end .column-content -->
 
 	<?php if ( 'column-full' != $post_layout && 'column-right' != $post_layout ) : ?>
-	<div class="column column-narrow column-last">
+	<aside class="column column-narrow column-last" role="complementary" aria-label="<?php esc_attr_e( 'Right Sidebar', 'academica' ); ?>">
 		<?php dynamic_sidebar( 'sidebar-2' ); ?>
-	</div><!-- end .column-narrow -->
+	</aside><!-- end .column-narrow -->
 	<?php endif; ?>
 
 	<?php endwhile; ?>

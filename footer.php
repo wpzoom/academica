@@ -3,7 +3,7 @@
  * @package Academica
  */
 ?>
-			<div id="footer" class="clearfix">
+			<footer id="footer" class="clearfix" role="contentinfo">
 				<?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
 
 				    <section class="site-widgetized-section">
@@ -16,11 +16,20 @@
 
 				<?php endif; ?>
 
-				<?php wp_nav_menu( array( 'container' => false, 'depth' => 1, 'theme_location' => 'footer', 'fallback_cb' => false ) ); ?>
+				<?php wp_nav_menu( array( 
+					'container' => 'nav', 
+					'container_class' => 'footer-navigation',
+					'container_role' => 'navigation',
+					'container_aria_label' => esc_attr__( 'Footer Menu', 'academica' ),
+					'depth' => 1, 
+					'theme_location' => 'footer', 
+					'fallback_cb' => false 
+				) ); ?>
 				<p class="copy">
  					<?php academica_the_footer_text( 'two' ); ?>
 				</p>
-			</div><!-- end #footer -->
+			</footer><!-- end #footer -->
+		</main><!-- end #main -->
 		</div><!-- end #wrap -->
 
 		<?php wp_footer(); ?>

@@ -8,9 +8,9 @@ get_header(); ?>
 <div id="content" class="clearfix">
 
     <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-    	<div class="column column-narrow">
+    	<aside class="column column-narrow" role="complementary" aria-label="<?php esc_attr_e( 'Left Sidebar', 'academica' ); ?>">
     		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-    	</div><!-- end .column-narrow -->
+    	</aside><!-- end .column-narrow -->
     <?php endif; ?>
 
 	<div id="column-content" class="column column-content posts">
@@ -32,9 +32,9 @@ get_header(); ?>
 	</div><!-- end .column-content -->
 
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div class="column column-narrow column-last">
+		<aside class="column column-narrow column-last" role="complementary" aria-label="<?php esc_attr_e( 'Right Sidebar', 'academica' ); ?>">
 			<?php dynamic_sidebar( 'sidebar-2' ); ?>
-		</div><!-- end .column-narrow -->
+		</aside><!-- end .column-narrow -->
 	<?php endif; ?>
 
 </div><!-- end #content -->

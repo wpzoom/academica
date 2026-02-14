@@ -397,11 +397,32 @@ td {
 
 a {
 	color: #0A5794;
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
 }
 
 a:hover {
-	color: #333;
+	color: #083d68;
+}
+
+a:focus {
+	outline: 2px solid #0A5794;
+	outline-offset: 2px;
+}
+
+/* Links that don't need underlines (have other visual cues) */
+#main-nav a,
+.navbar-nav a,
+#site-title a,
+.site-logo a,
+#logo a,
+.widget-title a,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.skip-link,
+button,
+input[type="button"],
+input[type="submit"] {
+	text-decoration: none;
 }
 
 h1,
@@ -1022,7 +1043,7 @@ div.single h6 {
 
 .wp-caption-text,
 .gallery-caption {
-    color: #868686;
+    color: #595959;
     margin: 0;
     padding: 15px 0;
     text-align: center;
@@ -1057,7 +1078,7 @@ div.single h6 {
 .entry-meta,
 .entry-caption,
 .wp-caption-text {
-	color: #666;
+	color: #595959;
  	margin: 0 0 20px;
 }
 
@@ -1076,7 +1097,7 @@ div.single h6 {
 }
 
 .sep {
-	color: #999;
+	color: #767676;
 }
 
 .sticky .sep,
@@ -1091,13 +1112,13 @@ p.pages {
 #wrap a.highlight,
 #wrap h2.heading a,
 #wrap .entry-meta a {
-	color: #666;
+	color: #595959;
 }
 
 #wrap a.highlight:hover,
 #wrap h2.heading a:hover,
 #wrap .entry-meta a:hover {
-	text-decoration: underline;
+	color: #333;
 }
 
 
@@ -1317,7 +1338,7 @@ p.pages {
  	margin: 0 0 10px 10px;
 }
 #footer-column div.textwidget p {
-	color: #777;
+	color: #595959;
 	line-height: 1.455;
 }
 #wpstats {
@@ -1467,7 +1488,7 @@ p.pages {
 .widget_rss cite,
 .widget_rss .rss-date,
 .widget_twitter .timesince {
-	color: #777;
+	color: #595959;
 	font-style: italic;
 	font-weight: normal;
 }
@@ -1590,36 +1611,118 @@ html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-wh
 }
 
 .has-light-gray-color {
-	color: #777777;
+	color: #595959;
 }
 
 .has-light-gray-background-color {
-	background-color: #777777;
+	background-color: #595959;
 }
 
 /* Continue Reading Link */
 .read-more {
 	color: #0A5794;
 	font-weight: 600;
-	text-decoration: none;
+	text-decoration: underline;
 	display: inline-block;
 	margin-top: 10px;
+	padding: 8px 0;
+	min-height: 44px;
+	box-sizing: border-box;
 }
 
 .read-more:hover {
 	color: #083d68;
-	text-decoration: underline;
 }
 
 /* Read more link from the_content() */
 .read-more-link {
 	color: #0A5794;
 	font-weight: 600;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .read-more-link:hover {
 	color: #083d68;
-	text-decoration: underline;
+}
+
+
+/* =Accessibility Enhancements
+-------------------------------------------------------------- */
+
+/* Touch target sizing for mobile (WCAG 2.5.5)
+   Ensure interactive elements have minimum 44x44px touch targets */
+
+/* Entry meta links - improve touch targets */
+.entry-meta a {
+	display: inline-block;
+	padding: 4px 0;
+	min-height: 44px;
+	line-height: 1.5;
+}
+
+/* Widget links - improve touch targets */
+.widget ul li a {
+	display: inline-block;
+	padding: 6px 0;
+}
+
+.widget_pages > ul li,
+.widget ul.menu li {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+/* Comment links - improve touch targets */
+.commentlist a {
+	display: inline-block;
+	padding: 4px 0;
+}
+
+/* Footer navigation - improve touch targets */
+#footer .footer-navigation li a {
+	display: inline-block;
+	padding: 8px 4px;
+}
+
+/* Pagination links - improve touch targets */
+.navigation a,
+.nav-links a {
+	display: inline-block;
+	padding: 8px 12px;
+	min-height: 44px;
+	min-width: 44px;
+	text-align: center;
+}
+
+/* Author vcard links */
+.author.vcard a {
+	display: inline-block;
+	padding: 4px 0;
+}
+
+/* Ensure adequate spacing between adjacent links */
+.entry-meta .by-author,
+.entry-meta .category,
+.entry-meta .datetime {
+	margin-right: 8px;
+}
+
+/* Navigation menu items - ensure adequate touch targets on mobile */
+@media screen and (max-width: 768px) {
+	.navbar-nav li a {
+		padding: 12px 16px;
+		min-height: 44px;
+	}
+
+	#search input[type="search"] {
+		min-height: 44px;
+		padding: 10px 12px;
+	}
+
+	#search button,
+	#search input[type="submit"] {
+		min-height: 44px;
+		min-width: 44px;
+	}
 }
 .mm-menu .mm-tileview.mm-listview:after,.mm-menu.mm-tileview .mm-listview:after{content:'';display:block;clear:both}.mm-menu .mm-tileview.mm-listview>li>.mm-next:after,.mm-menu .mm-tileview.mm-listview>li>.mm-next:before,.mm-menu.mm-tileview .mm-listview>li>.mm-next:after,.mm-menu.mm-tileview .mm-listview>li>.mm-next:before,.mm-menu.mm-tileview .mm-panel:after{content:none;display:none}.mm-menu .mm-tileview.mm-listview>li,.mm-menu.mm-tileview .mm-listview>li{width:50%;height:0;padding:50% 0 0;float:left;position:relative}.mm-menu .mm-tileview.mm-listview>li:after,.mm-menu.mm-tileview .mm-listview>li:after{left:0;top:0;border-right-width:1px;border-right-style:solid;z-index:-1}.mm-menu .mm-tileview.mm-listview>li.mm-tile-xs,.mm-menu.mm-tileview .mm-listview>li.mm-tile-xs{width:12.5%;padding-top:12.5%}.mm-menu .mm-tileview.mm-listview>li.mm-tile-s,.mm-menu.mm-tileview .mm-listview>li.mm-tile-s{width:25%;padding-top:25%}.mm-menu .mm-tileview.mm-listview>li.mm-tile-l,.mm-menu.mm-tileview .mm-listview>li.mm-tile-l{width:75%;padding-top:75%}.mm-menu .mm-tileview.mm-listview>li.mm-tile-xl,.mm-menu.mm-tileview .mm-listview>li.mm-tile-xl{width:100%;padding-top:100%}.mm-menu .mm-tileview.mm-listview>li>a,.mm-menu .mm-tileview.mm-listview>li>span,.mm-menu.mm-tileview .mm-listview>li>a,.mm-menu.mm-tileview .mm-listview>li>span{line-height:1px;text-align:center;padding:50% 10px 0;margin:0;position:absolute;top:0;right:1px;bottom:1px;left:0}.mm-menu .mm-tileview.mm-listview>li>.mm-next,.mm-menu.mm-tileview .mm-listview>li>.mm-next{width:auto}.mm-menu.mm-tileview .mm-panel{padding-left:0;padding-right:0}.mm-menu.mm-tileview .mm-listview{margin:0}

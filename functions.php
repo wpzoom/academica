@@ -39,7 +39,7 @@ function academica_setup() {
 		array(
 			'name'  => __( 'Light Gray', 'academica' ),
 			'slug'  => 'light-gray',
-			'color' => '#777777',
+			'color' => '#595959',
 		),
 		array(
 			'name'  => __( 'White', 'academica' ),

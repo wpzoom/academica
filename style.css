@@ -517,7 +517,7 @@ p {
 .nivo-caption,
 /* Assistive text for screen readers - compatible with older code */
 .assistive-text,
-#searchform label {
+.searchform label {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
 }
@@ -1499,11 +1499,11 @@ p.pages {
 	margin: 3px 0;
 }
 
-#header #searchform {
+#header .searchform {
 	text-align: right;
 }
 
-#searchform input {
+.searchform input {
 	display: inline;
 	max-width: 180px;
     margin-left: 7px;

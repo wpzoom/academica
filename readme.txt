@@ -2,7 +2,7 @@
 Contributors: WPZOOM
 Requires at least: 6.0
 Tested up to: 6.9
-Version: 2.1.2
+Version: 2.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, three-columns, custom-header, custom-menu, translation-ready, right-sidebar, custom-background, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, blog, rtl-language-support
@@ -38,6 +38,9 @@ GNU General Public License for more details.
 
 
 == Changelog ==
+
+= 2.1.3 =
+* Minor fixes
 
 = 2.1.2 =
 * Minor fix

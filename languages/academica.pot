@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Academica 1.2.2-wpcom\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/academica\n"
-"POT-Creation-Date: 2025-07-28 07:05+0000\n"
+"POT-Creation-Date: 2026-02-17 07:45+0000\n"
 "POT-Revision-Date: Sun May 08 2016 10:34:03 GMT+0300 (EEST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -33,7 +33,7 @@ msgid "&larr; Previous"
 msgstr ""
 
 #. used between list items, there is a space after the comma.
-#: functions.php:392
+#: functions.php:363
 msgid ", "
 msgstr ""
 
@@ -86,21 +86,21 @@ msgid ""
 msgstr ""
 
 #. 1 is the author's name, 2 is category, and 3 is the date.
-#: functions.php:409
+#: functions.php:380
 #, php-format
 msgid ""
 "<span class=\"by-author\">By %1$s </span>in <span class=\"category\">"
 "%2$s</span> on <span class=\"datetime\">%3$s</span>"
 msgstr ""
 
-#: functions.php:411
+#: functions.php:382
 #, php-format
 msgid ""
 "<span class=\"by-author\">By %1$s </span>on <span class=\"datetime\">"
 "%3$s</span>."
 msgstr ""
 
-#: functions.php:437
+#: functions.php:408
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: functions.php:581
+#: functions.php:552
 #, php-format
 msgid "Articles posted by %s"
 msgstr ""
@@ -245,7 +245,7 @@ msgid ""
 "results."
 msgstr ""
 
-#: functions.php:464
+#: functions.php:435
 msgid "Choose layout for this post:"
 msgstr ""
 
@@ -273,7 +273,7 @@ msgstr ""
 msgid "Continue Reading"
 msgstr ""
 
-#: functions.php:298
+#: functions.php:269
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -304,7 +304,7 @@ msgid ""
 "this theme."
 msgstr ""
 
-#: functions.php:468
+#: functions.php:439
 msgid "Default"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "Enhanced Header Options"
 msgstr ""
 
-#: functions.php:584
+#: functions.php:555
 msgid "Error 404"
 msgstr ""
 
@@ -364,7 +364,7 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:81
+#: functions.php:81 footer.php:23
 msgid "Footer Menu"
 msgstr ""
 
@@ -373,7 +373,7 @@ msgstr ""
 msgid "Full Width"
 msgstr ""
 
-#: functions.php:476
+#: functions.php:447
 msgid "Full Width (no sidebars)"
 msgstr ""
 
@@ -394,7 +394,7 @@ msgstr ""
 msgid "Hide this notice"
 msgstr ""
 
-#: functions.php:517
+#: functions.php:488
 msgid "Home"
 msgstr ""
 
@@ -477,12 +477,16 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: functions.php:288 comments.php:15 content.php:21
+#: functions.php:259 comments.php:15 content.php:21
 msgid "Leave a comment"
 msgstr ""
 
 #: inc/customizer/bootstrap.php:61
 msgid "Left"
+msgstr ""
+
+#: index.php:11 single.php:19
+msgid "Left Sidebar"
 msgstr ""
 
 #: functions.php:40
@@ -530,7 +534,7 @@ msgstr ""
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: functions.php:438
+#: functions.php:409
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -547,7 +551,7 @@ msgstr ""
 msgid "Number of posts to show:"
 msgstr ""
 
-#: functions.php:472
+#: functions.php:443
 msgid "Only Left Sidebar"
 msgstr ""
 
@@ -555,7 +559,7 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: functions.php:263 functions.php:588
+#: functions.php:559
 #, php-format
 msgid "Page %s"
 msgstr ""
@@ -573,20 +577,20 @@ msgstr ""
 msgid "Post Content Display on Archives"
 msgstr ""
 
-#: functions.php:450
+#: functions.php:421
 msgid "Post Layout"
 msgstr ""
 
-#: functions.php:435
+#: functions.php:406
 msgid "Post navigation"
 msgstr ""
 
-#: functions.php:577
+#: functions.php:548
 #, php-format
 msgid "Posts tagged &#39;%s&#39;"
 msgstr ""
 
-#: functions.php:599
+#: functions.php:570
 #, php-format
 msgid ""
 "Powered by <a href=\"%s\">WordPress</a> / Academica WordPress Theme by <a "
@@ -600,6 +604,10 @@ msgstr ""
 
 #: functions.php:30
 msgid "Primary Blue"
+msgstr ""
+
+#: header.php:78
+msgid "Primary Navigation"
 msgstr ""
 
 #: image.php:71
@@ -627,15 +635,23 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
+#: index.php:35 single.php:38
+msgid "Right Sidebar"
+msgstr ""
+
 #: inc/customizer/bootstrap.php:148
 msgid "Rounded (Friendly & Soft)"
 msgstr ""
 
-#: searchform.php:7 searchform.php:8 searchform.php:9
+#: searchform.php:9 searchform.php:10
 msgid "Search"
 msgstr ""
 
-#: functions.php:574
+#: searchform.php:8
+msgid "Search for:"
+msgstr ""
+
+#: functions.php:545
 #, php-format
 msgid "Search results for &#39;%s&#39;"
 msgstr ""
@@ -671,6 +687,10 @@ msgstr ""
 msgid "Sidebar: Right"
 msgstr ""
 
+#: header.php:26
+msgid "Skip to main content"
+msgstr ""
+
 #: inc/customizer/bootstrap.php:149
 msgid "Slab Serif (Strong Serifs)"
 msgstr ""
@@ -691,6 +711,10 @@ msgstr ""
 
 #: functions.php:191
 msgid "Start here"
+msgstr ""
+
+#: searchform.php:10
+msgid "Submit search"
 msgstr ""
 
 #: inc/admin/admin.php:281
@@ -737,6 +761,10 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
+#: header.php:83 header.php:84
+msgid "Toggle mobile menu"
+msgstr ""
+
 #: functions.php:80
 msgid "Top Menu"
 msgstr ""
@@ -780,7 +808,7 @@ msgstr ""
 msgid "View Academica PRO Demo"
 msgstr ""
 
-#: functions.php:403
+#: functions.php:374
 #, php-format
 msgid "View all posts by %s"
 msgstr ""

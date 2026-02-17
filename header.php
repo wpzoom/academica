@@ -77,39 +77,21 @@
 
 					<nav class="main-navbar" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'academica' ); ?>">
 
-	                    <div class="navbar-header">
-	                        <?php if (has_nav_menu( 'primary' )) { ?>
+					<button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+						<span class="screen-reader-text"><?php _e( 'Menu', 'academica' ); ?></span>
+						<span class="icon-bar" aria-hidden="true"></span>
+						<span class="icon-bar" aria-hidden="true"></span>
+						<span class="icon-bar" aria-hidden="true"></span>
+					</button>
 
-	                           <a class="navbar-toggle" href="#menu-main-slide" aria-label="<?php esc_attr_e( 'Toggle mobile menu', 'academica' ); ?>" aria-expanded="false" aria-controls="menu-main-slide">
-	                               <span class="screen-reader-text"><?php _e( 'Toggle mobile menu', 'academica' ); ?></span>
-	                               <span class="icon-bar" aria-hidden="true"></span>
-	                               <span class="icon-bar" aria-hidden="true"></span>
-	                               <span class="icon-bar" aria-hidden="true"></span>
-	                           </a>
+					<div id="primary-menu" class="navbar-menu">
+						<?php wp_nav_menu( array(
+							'menu_class'     => 'nav navbar-nav sf-menu',
+							'theme_location' => 'primary',
+						) ); ?>
+					</div>
 
-
-	                           <?php wp_nav_menu( array(
-	                               'container_id'   => 'menu-main-slide',
-	                               'theme_location' => 'primary'
-	                           ) );
-	                       }  ?>
-
-	                    </div>
-
-
-	                    <div id="navbar-main">
-
-	                        <?php if (has_nav_menu( 'primary' )) {
-	                            wp_nav_menu( array(
-	                                'menu_class'     => 'nav navbar-nav dropdown sf-menu',
-	                                'theme_location' => 'primary'
-	                            ) );
-	                        } ?>
-
-
-	                    </div><!-- #navbar-main -->
-
-	                </nav><!-- .navbar -->
+				</nav><!-- .main-navbar -->
 
 					<div id="search">
 						<?php get_search_form(); ?>

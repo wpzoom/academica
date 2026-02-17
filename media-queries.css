@@ -42,31 +42,18 @@
 }
 
 
-@media (min-width: 980px) {
-
-    #menu-main-slide { display: none !important }
-
-}
-
 @media screen and (max-width: 979px) {
 
-    header .menu-main-container {
-        text-indent: -9999px;
-        height: 0;
+    .navbar-menu {
+        display: none;
     }
 
-    .menu-main-container.mm-menu {
-        text-indent: 0;
-        height: 100%;
+    .main-navbar.toggled .navbar-menu {
+        display: block;
     }
 
-    #navbar-main,
-    #header #menu-main-slide {
-        display: none
-    }
-
-    .navbar-toggle {
-        display: block
+    .menu-toggle {
+        display: block;
     }
 
 }

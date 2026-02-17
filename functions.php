@@ -81,6 +81,9 @@ function academica_setup() {
 		'footer'  => __( 'Footer Menu', 'academica' ),
 	) );
 
+	// Add the theme's nav classes to the wp_page_menu fallback <ul>.
+	add_filter( 'wp_page_menu', 'academica_page_menu_add_class' );
+
     /*
      * Switch default core markup for search form, comment form, and comments
      * to output valid HTML5.
@@ -115,6 +118,29 @@ function academica_setup() {
 add_action( 'after_setup_theme', 'academica_setup' );
 
 /**
+ * Add nav classes to the wp_page_menu fallback so it matches wp_nav_menu output.
+ */
+function academica_page_menu_add_class( $menu ) {
+	return str_replace( '<ul>', '<ul class="nav navbar-nav sf-menu">', $menu );
+}
+
+/**
+ * Add dropdown SVG arrow inside menu links that have children.
+ */
+function academica_dropdown_icon_to_menu_link( $title, $item, $args, $depth ) {
+	if ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
+		if ( 0 === $depth ) {
+			$svg = '<svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg>';
+		} else {
+			$svg = '<svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" /></svg>';
+		}
+		$title .= '<span class="dropdown-menu-toggle" role="presentation">' . $svg . '</span>';
+	}
+	return $title;
+}
+add_filter( 'nav_menu_item_title', 'academica_dropdown_icon_to_menu_link', 10, 4 );
+
+/**
  * Enqueues scripts and styles
  */
 function academica_enqueue_scripts() {
@@ -122,13 +148,7 @@ function academica_enqueue_scripts() {
 
 	wp_enqueue_style( 'academica-style-mobile', get_template_directory_uri() . '/media-queries.css', array( 'academica-style' ), '1.0' );
 
-	wp_enqueue_style( 'dashicons' );
-
- 	wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/js/jquery.mmenu.min.all.js', array( 'jquery' ), '20150325', true );
-
- 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.min.js', array( 'jquery' ), '20150325', true );
-
- 	wp_enqueue_script( 'academica-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150325', true );
+ 	wp_enqueue_script( 'academica-script', get_template_directory_uri() . '/js/functions.js', array(), '2.2', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

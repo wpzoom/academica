@@ -118,17 +118,19 @@ add_action( 'after_setup_theme', 'academica_setup' );
  * Enqueues scripts and styles
  */
 function academica_enqueue_scripts() {
-	wp_enqueue_style( 'academica-style', get_stylesheet_uri() );
+	$theme_version = wp_get_theme()->get( 'Version' );
 
-	wp_enqueue_style( 'academica-style-mobile', get_template_directory_uri() . '/media-queries.css', array( 'academica-style' ), '1.0' );
+	wp_enqueue_style( 'academica-style', get_stylesheet_uri(), array(), $theme_version );
+
+	wp_enqueue_style( 'academica-style-mobile', get_template_directory_uri() . '/media-queries.css', array( 'academica-style' ), $theme_version );
 
 	wp_enqueue_style( 'dashicons' );
 
- 	wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/js/jquery.mmenu.min.all.js', array( 'jquery' ), '20150325', true );
+ 	wp_enqueue_script( 'mmenu', get_template_directory_uri() . '/js/jquery.mmenu.min.all.js', array( 'jquery' ), $theme_version, true );
 
- 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.min.js', array( 'jquery' ), '20150325', true );
+ 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.min.js', array( 'jquery' ), $theme_version, true );
 
- 	wp_enqueue_script( 'academica-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150325', true );
+ 	wp_enqueue_script( 'academica-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), $theme_version, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

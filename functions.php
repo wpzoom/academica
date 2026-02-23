@@ -650,14 +650,18 @@ $academica_options = get_option('academica_options');
 
 if (!function_exists('academica_admin_scripts')) {
     function academica_admin_scripts($hook) {
+        $theme_version = wp_get_theme()->get( 'Version' );
+
         if ('appearance_page_academica' === $hook || 'widgets.php' === $hook) {
-            wp_enqueue_style('academica-admin', get_template_directory_uri() . '/inc/admin/admin.css');
+            wp_enqueue_style('academica-admin', get_template_directory_uri() . '/inc/admin/admin.css', array(), $theme_version);
         }
 
         // Styles
         wp_enqueue_style(
             'academica-admin-review-notice',
-            get_template_directory_uri() . '/inc/admin/admin-review-notice.css'
+            get_template_directory_uri() . '/inc/admin/admin-review-notice.css',
+            array(),
+            $theme_version
         );
 
     }

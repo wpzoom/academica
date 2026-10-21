@@ -16,7 +16,7 @@
          */
         $('.sf-menu').superfish({
             'speed': 'fast',
-            'delay' : 0,
+            'delay' : 300,
             'animation': {
                 'height': 'show'
             }

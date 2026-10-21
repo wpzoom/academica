@@ -1707,6 +1707,10 @@ html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-wh
 	margin-right: 8px;
 }
 
+body .wp-lightbox-overlay {
+	z-index: 99990;
+}
+
 /* Navigation menu items - ensure adequate touch targets on mobile */
 @media screen and (max-width: 768px) {
 	.navbar-nav li a {

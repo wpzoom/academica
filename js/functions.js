@@ -16,7 +16,7 @@
          */
         $('.sf-menu').superfish({
             'speed': 'fast',
-            'delay' : 300,
+            'delay' : 0,
             'animation': {
                 'height': 'show'
             }
@@ -42,6 +42,10 @@
                 "pageshadow",
                 "border-full"
             ]
+        }, {
+            "offCanvas": {
+                "noPageSelector": [".wp-lightbox-overlay"]
+            }
         });
 
         /**
